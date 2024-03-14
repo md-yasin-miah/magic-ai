@@ -1,5 +1,3 @@
-import React from 'react';
-
 const UpperNav = () => {
     return (
         <div className='flex h-12 items-center justify-center bg-[#343C57] px-3 text-center text-white upperNavBg'>
