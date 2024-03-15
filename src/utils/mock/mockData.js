@@ -47,4 +47,45 @@ const FutureOfAIData = [
         description: 'Access and manage your support tickets from your dashboard.'
     }
 ]
-export { NavItem, FutureOfAIData }
+
+const careerData = [
+    {
+        id: 1,
+        title: 'Digital Agencies',
+        color: '#CBA153',
+        shadow: '#cba15326'
+    },
+    {
+        id: 2,
+        title: 'Product Designers',
+        color: '#AB7FE6',
+        shadow: '#ab7fe621'
+    },
+    {
+        id: 3,
+        title: 'Enterpreneurs',
+        color: '#57CBC6',
+        shadow: '#57cbc624'
+    },
+    {
+        id: 4,
+        title: 'Copywriters',
+        color: '#7F8FE6',
+        shadow: '#7f8fe624'
+    },
+    {
+        id: 5,
+        title: 'Digital Marketers',
+        color: '#6BAC65',
+        shadow: '#6bac6524'
+    },
+    {
+        id: 6,
+        title: 'Developers',
+        color: '#EF793A',
+        shadow: '#ef793a1f'
+    }
+
+]
+
+export { NavItem, FutureOfAIData, careerData }
