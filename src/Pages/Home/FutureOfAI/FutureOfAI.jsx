@@ -8,7 +8,7 @@ const FutureOfAI = () => {
             <section className='pb-20 pt-32 transition-all duration-700 md:translate-y-8 md:opacity-0 [&.lqd-is-in-view]:translate-y-0 [&.lqd-is-in-view]:opacity-100 lqd-is-in-view'>
                 <div className='container'>
                     <header className='mx-auto text-center w-2/5 mb-14 max-xl:w-8/12 max-lg:w-10/12 max-md:w-full'>
-                        <h2 className='mb-[0.45em] font-onest font-bold text-[53px] text-headingForeground'>The future of AI.</h2>
+                        <h2 className='mb-[0.45em] font-secondary font-bold text-[53px] text-headingForeground'>The future of AI.</h2>
                         <p className='text-[18px] leading-[1.444em]'></p>
                     </header>
                     <div className='grid grid-cols-3 justify-between gap-x-20 gap-y-9 max-lg:grid-cols-2 max-lg:gap-x-10 max-md:grid-cols-1'>
@@ -18,8 +18,8 @@ const FutureOfAI = () => {
                                     <SvgIconWrapper IconComponent={item?.svgIcon} />
                                 </div>
                                 <div className='relative shrink'>
-                                    <h4 className='mb-3 font-onest text-lg text-headingForeground font-medium'>{item?.title}</h4>
-                                    <p className="text-[14px] text-lightGray" dangerouslySetInnerHTML={{ __html: item.description }}></p>
+                                    <h4 className='mb-3 font-secondary text-lg text-headingForeground font-medium'>{item?.title}</h4>
+                                    <p className="text-[14px] text-lightGray font-primary" dangerouslySetInnerHTML={{ __html: item.description }}></p>
                                 </div>
                             </div>
                         ))}

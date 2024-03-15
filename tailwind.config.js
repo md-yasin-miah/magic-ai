@@ -12,8 +12,8 @@ export default {
       'lightGray': 'rgb(102, 112, 127)',
     },
     fontFamily: {
-      golos: ['Golos Text', 'sans-serif'],
-      onest: ['Onest', 'sans-serif'],
+      primary: ['Golos Text', 'sans-serif'],
+      secondary: ['Onest', 'sans-serif'],
     },
     extend: {},
   },
