@@ -1,0 +1,45 @@
+import PropTypes from 'prop-types';
+import { useEffect, useRef, useState } from 'react';
+
+const ScrollAwareSection = ({ children, className }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  console.log(isVisible)
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target); // Stop observing once section is visible
+        }
+      });
+    });
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current); // Cleanup function
+      }
+    };
+  }, []);
+
+  return (
+    <section
+      ref={sectionRef}
+      className={`site-section ${className} transition-all duration-700 md:translate-y-8 md:opacity-0 [&.lqd-is-in-view]:translate-y-0 [&.lqd-is-in-view]:opacity-100 ${isVisible ? 'lqd-is-in-view' : ''}`}
+    >
+      {children}
+    </section>
+  );
+};
+
+export default ScrollAwareSection;
+
+ScrollAwareSection.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+};
