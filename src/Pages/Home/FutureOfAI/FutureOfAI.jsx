@@ -1,4 +1,6 @@
+import PropTypes from "prop-types";
 import { FutureOfAIData } from "../../../utils/mock/mockData";
+const SvgIconWrapper = ({ IconComponent }) => <IconComponent />;
 
 const FutureOfAI = () => {
     return (
@@ -13,11 +15,11 @@ const FutureOfAI = () => {
                         {FutureOfAIData?.map((item) => (
                             <div className='group flex gap-5' key={item?.id}>
                                 <div className='grid place-items-center shrink-0 w-11 h-11 rounded-lg bg-[#F2F2F2] text-heading-foreground transition-all group-hover:scale-125 group-hover:shadow-xl group-hover:bg-black group-hover:text-white'>
-                                    {item?.svgIcon}
+                                    <SvgIconWrapper IconComponent={item?.svgIcon} />
                                 </div>
                                 <div className='relative shrink'>
                                     <h4 className='mb-3 font-onest text-lg text-headingForeground font-medium'>{item?.title}</h4>
-                                    <p className="text-[14px] text-lightGray">{item?.description}</p>
+                                    <p className="text-[14px] text-lightGray" dangerouslySetInnerHTML={{ __html: item.description }}></p>
                                 </div>
                             </div>
                         ))}
@@ -26,6 +28,10 @@ const FutureOfAI = () => {
             </section>
         </section>
     );
+};
+
+SvgIconWrapper.propTypes = {
+    IconComponent: PropTypes.elementType.isRequired
 };
 
 export default FutureOfAI;
