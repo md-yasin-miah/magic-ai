@@ -32,7 +32,7 @@ const FutureOfAI = () => {
           <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
             {
               careerData.map((item) =>
-                <div key={item.id} className={`lqd-color-box flex items-center py-5 px-9 gap-4 rounded-[15px] transition-all hover:shadow-lg hover:-translate-y-2 text-[${item.color}] bg-[${item.color}] bg-opacity-[0.07] hover:shadow-[${item.shadow}]`}>
+                <div key={item.id} className={`lqd-color-box flex items-center py-5 px-9 gap-4 rounded-[15px] transition-all hover:shadow-lg hover:-translate-y-2 bg-opacity-[0.07] ${item.className}`}>
                   <span className="lqd-box-dot w-6 h-6 border-[8px] border-white rounded-full shadow-lg !bg-current"></span>
                   <h3 className="text-xl text-inherit -tracking-tight">{item.title}</h3>
                 </div>
@@ -41,20 +41,6 @@ const FutureOfAI = () => {
           </div>
         </div>
       </ScrollAwareSection>
-      <section className='site-section py-20 transition-all duration-700 md:translate-y-8 md:opacity-0 [&.lqd-is-in-view]:translate-y-0 [&.lqd-is-in-view]:opacity-100 lqd-is-in-view'>
-        <div className="container">
-          <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
-            {
-              careerData.map((item) =>
-                <div key={item.id} className={`lqd-color-box flex items-center py-5 px-9 gap-4 rounded-[15px] transition-all hover:shadow-lg hover:-translate-y-2 text-[${item.color}] bg-[${item.color}] bg-opacity-[0.07] hover:shadow-[${item.shadow}]`}>
-                  <span className="lqd-box-dot w-6 h-6 border-[8px] border-white rounded-full shadow-lg !bg-current"></span>
-                  <h3 className="text-xl text-inherit -tracking-tight">{item.title}</h3>
-                </div>
-              )
-            }
-          </div>
-        </div>
-      </section>
     </section>
   );
 };

@@ -3,15 +3,19 @@ import { useEffect, useRef, useState } from 'react';
 
 const ScrollAwareSection = ({ children, className }) => {
   const [isVisible, setIsVisible] = useState(false);
-  console.log(isVisible)
   const sectionRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
+        // if (entry.isIntersecting) {
+        //   setIsVisible(true);
+        //   observer.unobserve(entry.target); // Stop observing once section is visible
+        // }
         if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target); // Stop observing once section is visible
+          setIsVisible(true); // Element is intersecting the viewport
+        } else {
+          setIsVisible(false); // Element is no longer intersecting the viewport
         }
       });
     });
