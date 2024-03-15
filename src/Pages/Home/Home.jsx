@@ -1,8 +1,11 @@
+import React from "react";
+import UpperNav from "./UpperNav/UpperNav";
+
 const Home = () => {
     return (
-        <div>
-            Home
-        </div>
+        <React.Fragment>
+            <UpperNav />
+        </React.Fragment>
     );
 };
 
