@@ -8,6 +8,8 @@ export default {
     colors: {
       'white': '#ffffff',
       'black': '#000000',
+      'headingForeground': '#1F2328',
+      'lightGray': 'rgb(102, 112, 127)',
     },
     fontFamily: {
       golos: ['Golos Text', 'sans-serif'],
