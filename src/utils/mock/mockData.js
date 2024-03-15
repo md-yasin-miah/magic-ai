@@ -53,37 +53,33 @@ const careerData = [
         id: 1,
         title: 'Digital Agencies',
         color: '#CBA153',
-        shadow: '#cba15326'
+        shadow: '#cba15326',
+        className: 'text-[#CBA153] bg-[#CBA153] hover:shadow-[#cba15326]',
     },
     {
         id: 2,
         title: 'Product Designers',
-        color: '#AB7FE6',
-        shadow: '#ab7fe621'
+        className: 'text-[#AB7FE6] bg-[#AB7FE6] hover:shadow-[#ab7fe621]',
     },
     {
         id: 3,
         title: 'Enterpreneurs',
-        color: '#57CBC6',
-        shadow: '#57cbc624'
+        className: 'text-[#57CBC6] bg-[#57CBC6] hover:shadow-[#57cbc624]',
     },
     {
         id: 4,
         title: 'Copywriters',
-        color: '#7F8FE6',
-        shadow: '#7f8fe624'
+        className: 'text-[#7F8FE6] bg-[#7F8FE6] hover:shadow-[#7f8fe624]',
     },
     {
         id: 5,
         title: 'Digital Marketers',
-        color: '#6BAC65',
-        shadow: '#6bac6524'
+        className: 'text-[#6BAC65] bg-[#6BAC65] hover:shadow-[#6bac6524]',
     },
     {
         id: 6,
         title: 'Developers',
-        color: '#EF793A',
-        shadow: '#ef793a1f'
+        className: 'text-[#EF793A] bg-[#EF793A] hover:shadow-[#ef793a1f]',
     }
 
 ]
