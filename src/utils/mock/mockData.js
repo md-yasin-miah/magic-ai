@@ -1,5 +1,18 @@
 import { centralImages } from "../images/centralImages";
-import { AIGeneratorSVG, AdvanceDashboardSVG, ArticleSVG, BlogConclusionSVG, CustomTemplateSVG, MultiLingualSVG, PaymentGatewaySVG, ProductDescSVG, SupportPlatformSVG, TestimonialSVG } from "../svg/SVG"
+import {
+    AIGeneratorSVG,
+    AdvanceDashboardSVG,
+    ArticleSVG,
+    BlogConclusionSVG,
+    CustomTemplateSVG,
+    MultiLingualSVG,
+    PaymentGatewaySVG,
+    ProductDescSVG,
+    SupportPlatformSVG,
+    TestimonialSVG,
+    YoutubeSVG,
+    InstagramSVG
+} from "../svg/SVG"
 
 const NavItem = [
     { id: 1, itemName: 'Home', link: '/' },
@@ -252,6 +265,24 @@ const customTemplateCardData = [
         svgIcon: BlogConclusionSVG,
         title: "Blog Conclusion",
         description: "End your blog posts on a high note. Craft memorable conclusions that leave a lasting impact."
+    },
+    {
+        id: "templates-social-media",
+        svgIcon: YoutubeSVG,
+        title: "Youtube Video Description",
+        description: "Elevate your YouTube content with compelling video descriptions. Generate engaging descriptions effortlessly and increase views."
+    },
+    {
+        id: "templates-social-media",
+        svgIcon: InstagramSVG,
+        title: "Instagram Captions",
+        description: "Elevate your Instagram game with captivating captions. Generate unique captions that engage followers and increase your reach."
+    },
+    {
+        id: "templates-social-media",
+        svgIcon: InstagramSVG,
+        title: "Instagram Hashtags",
+        description: "Boost your Instagram reach with relevant hashtags. Generate optimal, trending hashtags and increase your visibility."
     }
 ]
 
