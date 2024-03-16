@@ -5,6 +5,7 @@ import FutureOfAI from "./FutureOfAI/FutureOfAI";
 import MagicTools from "./MagicTools/MagicTools";
 import HowItWorks from "./howItWorks/HowItWorks";
 import Testimonials from "./Testimonials/Testimonials";
+import CustomTemplates from "./CustomTemplates/CustomTemplates";
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <UpperNav />
             <MainNav />
             <FutureOfAI />
+            <CustomTemplates />
             <MagicTools />
             <HowItWorks />
             <Testimonials />

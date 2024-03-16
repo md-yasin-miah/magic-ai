@@ -1,5 +1,5 @@
 import { centralImages } from "../images/centralImages";
-import { AIGeneratorSVG, AdvanceDashboardSVG, CustomTemplateSVG, MultiLingualSVG, PaymentGatewaySVG, SupportPlatformSVG } from "../svg/SVG"
+import { AIGeneratorSVG, AdvanceDashboardSVG, ArticleSVG, BlogConclusionSVG, CustomTemplateSVG, MultiLingualSVG, PaymentGatewaySVG, ProductDescSVG, SupportPlatformSVG, TestimonialSVG } from "../svg/SVG"
 
 const NavItem = [
     { id: 1, itemName: 'Home', link: '/' },
@@ -182,12 +182,86 @@ const futureAITabContentData = [
         poweredBy: "Powered by OpenAI"
     }
 ];
+const customTemplateItemListData = [
+    {
+        id: 'templates-all',
+        title: 'All',
+    },
+    {
+        id: 'templates-blog',
+        title: 'Blog',
+    },
+    {
+        id: 'templates-ecommerce',
+        title: '🎯 Ecommerce',
+    },
+    {
+        id: 'templates-development',
+        title: 'Development',
+    },
+    {
+        id: 'templates-advertisement',
+        title: 'Advertisement',
+    },
+    {
+        id: 'templates-social-media',
+        title: 'Social Media',
+    },
+    {
+        id: 'templates-email',
+        title: 'Email',
+    },
+    {
+        id: 'templates-marketing',
+        title: '🔥 Marketing',
+    },
+    {
+        id: 'templates-voiceover',
+        title: 'Voiceover',
+    },
+    {
+        id: 'templates-youtube',
+        title: 'Youtube',
+    },
+    {
+        id: 'templates-rss',
+        title: 'RSS',
+    }
+];
+const customTemplateCardData = [
+    {
+        id: "templates-ecommerce",
+        svgIcon: ProductDescSVG,
+        title: "Product Description",
+        description: "Easily create compelling product descriptions that sell. Increase conversions and boost sales.",
+    },
+    {
+        id: "templates-blog",
+        svgIcon: ArticleSVG,
+        title: "Article Generator",
+        description: "Instantly create unique articles on any topic. Boost engagement, improve SEO, and save time.",
+    },
+    {
+        id: "templates-ecommerce",
+        svgIcon: TestimonialSVG,
+        title: "Testimonial Review",
+        description: "Instantly generate authentic testimonials. Build trust and credibility with genuine reviews."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: BlogConclusionSVG,
+        title: "Blog Conclusion",
+        description: "End your blog posts on a high note. Craft memorable conclusions that leave a lasting impact."
+    }
+]
 
 export {
     NavItem,
     FutureOfAIData,
     careerData,
     toolsCardData,
-    futureAITabContentData
+    futureAITabContentData,
+    customTemplateItemListData,
+    customTemplateCardData
 }
 
