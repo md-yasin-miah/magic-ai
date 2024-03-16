@@ -1,3 +1,4 @@
+import { centralImages } from "../images/centralImages";
 import { AIGeneratorSVG, AdvanceDashboardSVG, CustomTemplateSVG, MultiLingualSVG, PaymentGatewaySVG, SupportPlatformSVG } from "../svg/SVG"
 
 const NavItem = [
@@ -89,7 +90,10 @@ const futureAITabContentData = [
         id: "ai-text-generator",
         title: "Say goodbye to writer’s block",
         description: "Intelligent Writing Assistant",
-        imageSrc: ""
+        imageSrc: centralImages?.textGeneratorImg,
+        alt: "Text Generator",
+        backgroundColor:"#F3E5F5",
+        poweredBy: "OpenAI"
     }
 ];
 
