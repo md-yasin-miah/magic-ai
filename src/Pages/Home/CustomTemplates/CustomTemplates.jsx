@@ -43,10 +43,10 @@ const CustomTemplates = () => {
                                         </span>
                                     </figure>
                                     <div className="relative shrink">
-                                        <h4 className="mb-3 font-semibold font-body">
+                                        <h4 className="mb-3 font-semibold font-primary">
                                             {card?.title}
                                         </h4>
-                                        <p className="text-[14px]">{card?.description}</p>
+                                        <p className="text-[14px] font-primary">{card?.description}</p>
                                     </div>
                                 </div>))}
                             <div className="templates-cards-overlay absolute inset-x-0 bottom-0 z-10 h-[230px] bg-gradient-to-t from-background from-20% to-transparent" style={{ visibility: showMore && "hidden" }}>
