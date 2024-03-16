@@ -15,6 +15,9 @@ import codeGeneratorImg from '/src/assets/image/futureAI/code-generator.jpeg';
 import aiGeneratorImg from '/src/assets/image/futureAI/ai-chat.jpeg';
 import aiSpeechImg from '/src/assets/image/futureAI/ai-speech.jpeg';
 import testimonialBG from '/src/assets/image/testimonials/world-map.png';
+import newsOne from './../../assets/image/news/newsOne.png';
+import newsTwo from './../../assets/image/news/newsTwo.png';
+import newsThree from './../../assets/image/news/newsThree.png';
 
 export const centralImages = {
     upperNavBG,
@@ -32,5 +35,8 @@ export const centralImages = {
     codeGeneratorImg,
     aiGeneratorImg,
     aiSpeechImg,
-    testimonialBG
+    testimonialBG,
+    newsOne,
+    newsTwo,
+    newsThree
 };
