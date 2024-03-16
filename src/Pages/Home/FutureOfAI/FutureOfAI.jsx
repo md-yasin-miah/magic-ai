@@ -32,9 +32,9 @@ const FutureOfAI = () => {
           <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
             {
               careerData.map((item) =>
-                <div key={item.id} className={`lqd-color-box flex items-center py-5 px-9 gap-4 rounded-[15px] transition-all hover:shadow-lg hover:-translate-y-2 bg-opacity-[0.07] ${item.className}`}>
-                  <span className="lqd-box-dot w-6 h-6 border-[8px] border-white rounded-full shadow-lg !bg-current"></span>
-                  <h3 className="text-xl text-inherit -tracking-tight">{item.title}</h3>
+                <div key={item.id} className={`lqd-color-box flex items-center py-5 px-9 gap-4 rounded-[15px] transition-all hover:shadow-lg hover:-translate-y-2 bg-opacity-[0.07] ${item.className.bg} ${item.className.shadow}`}>
+                  <span className={`lqd-box-dot w-6 h-6 border-[8px] border-white rounded-full shadow-lg ${item.className.bg}`}></span>
+                  <h3 className={`${item.className.text} text-xl text-inherit -tracking-tight`}>{item.title}</h3>
                 </div>
               )
             }

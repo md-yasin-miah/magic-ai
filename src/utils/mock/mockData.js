@@ -54,32 +54,32 @@ const careerData = [
         title: 'Digital Agencies',
         color: '#CBA153',
         shadow: '#cba15326',
-        className: 'text-[#CBA153] bg-[#CBA153] hover:shadow-[#cba15326]',
+        className: { text: 'text-[#CBA153]', bg: 'bg-[#CBA153]', shadow: 'hover:shadow-S[#cba15326]' },
     },
     {
         id: 2,
         title: 'Product Designers',
-        className: 'text-[#AB7FE6] bg-[#AB7FE6] hover:shadow-[#ab7fe621]',
+        className: { text: 'text-[#AB7FE6]', bg: 'bg-[#AB7FE6]', shadow: 'hover:shadow-[#ab7fe621]' }
     },
     {
         id: 3,
         title: 'Enterpreneurs',
-        className: 'text-[#57CBC6] bg-[#57CBC6] hover:shadow-[#57cbc624]',
+        className: { text: 'text-[#57CBC6]', bg: 'bg-[#57CBC6]', shadow: 'hover:shadow-[#57cbc624]' }
     },
     {
         id: 4,
         title: 'Copywriters',
-        className: 'text-[#7F8FE6] bg-[#7F8FE6] hover:shadow-[#7f8fe624]',
+        className: { text: 'text-[#7F8FE6]', bg: 'bg-[#7F8FE6]', shadow: 'hover:shadow-[#7f8fe624]' }
     },
     {
         id: 5,
         title: 'Digital Marketers',
-        className: 'text-[#6BAC65] bg-[#6BAC65] hover:shadow-[#6bac6524]',
+        className: { text: 'text-[#6BAC65]', bg: 'bg-[#6BAC65]', shadow: 'hover:shadow-[#6bac6524]' }
     },
     {
         id: 6,
         title: 'Developers',
-        className: 'text-[#EF793A] bg-[#EF793A] hover:shadow-[#ef793a1f]',
+        className: { text: 'text-[#EF793A]', bg: 'bg-[#EF793A]', shadow: 'hover:shadow-[#ef793a1f]' }
     }
 
 ]
