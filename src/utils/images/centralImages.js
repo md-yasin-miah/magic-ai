@@ -8,6 +8,7 @@ import tools_3 from './../../assets/magicTools/NZBW-multilingual.png';
 import tools_4 from './../../assets/magicTools/RAhq-affiliate-system.png';
 import tools_5 from './../../assets/magicTools/mPWB-easy-export.png';
 import tools_6 from './../../assets/magicTools/rIwa-support-platform.png';
+import howItWorksBG from './../../assets/steps-bg.jpg';
 export const centralImages = {
     upperNavBG,
     logo,
@@ -17,5 +18,6 @@ export const centralImages = {
     tools_3,
     tools_4,
     tools_5,
-    tools_6
+    tools_6,
+    howItWorksBG
 };

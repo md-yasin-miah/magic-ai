@@ -1,45 +1,7 @@
 import ScrollAwareSection from "../../../components/ScrollAwareSection"
-import { centralImages } from "../../../utils/images/centralImages"
+import { toolsCardData } from "../../../utils/mock/mockData"
 
 const MagicTools = () => {
-  const toolsCardData = [
-    {
-      id: 1,
-      title: 'Advanced Dashboard',
-      description: 'Track a wide range of data points, including user traffic and sales.',
-      img: centralImages.tools_1
-    },
-    {
-      id: 2,
-      title: 'Payment Gateways',
-      description: 'Securely process credit card or other electronic payment methods.',
-      img: centralImages.tools_2
-    },
-    {
-      id: 3,
-      title: 'Multilingual',
-      description: 'Ability to understand and generate content in different languages.',
-      img: centralImages.tools_3
-    },
-    {
-      id: 4,
-      title: 'Affiliate System',
-      description: 'Ability to invite friends, and earn commission from their first purchase.',
-      img: centralImages.tools_4
-    },
-    {
-      id: 5,
-      title: 'Easy Export',
-      description: 'Export generated content as plain text, PDF, Word or HTML easily.',
-      img: centralImages.tools_5
-    },
-    {
-      id: 6,
-      title: 'Support Platform',
-      description: 'Access and mage support tickets from your dashboard.',
-      img: centralImages.tools_6
-    }
-  ]
   return (
     <ScrollAwareSection className='py-10'>
       <div className="container">
@@ -62,62 +24,6 @@ const MagicTools = () => {
                 </div>
               )
             }
-            {/* <div className="group px-8 pb-12 bg-[#F5F5F7] rounded-[40px] text-center overflow-hidden transition-all hover:-translate-y-2 hover:shadow-lg">
-              <figure className="group-hover:scale-105 relative z-0 inline-block transition-all duration-300">
-                <img className="-mx-8 max-w-[calc(100%+4rem)]" src="/upload/images/frontent/tools/Payments100.jpg" alt="Payment Gateways" width="696" height="426" />
-              </figure>
-              <div className="relative shrink">
-                <h4 className="mb-3 font-bold">
-                  Payment Gateways
-                </h4>
-                <p className="text-[14px]">Securely process credit card or other electronic payment methods.</p>
-              </div>
-            </div>
-            <div className="group px-8 pb-12 bg-[#F5F5F7] rounded-[40px] text-center overflow-hidden transition-all hover:-translate-y-2 hover:shadow-lg">
-              <figure className="group-hover:scale-105 relative z-0 inline-block transition-all duration-300">
-                <img className="-mx-8 max-w-[calc(100%+4rem)]" src="/upload/images/frontent/tools/NZBW-multilingual.png" alt="Multilingual" width="696" height="426" />
-              </figure>
-              <div className="relative shrink">
-                <h4 className="mb-3 font-bold">
-                  Multilingual
-                </h4>
-                <p className="text-[14px]">Ability to understand and generate content in different languages.</p>
-              </div>
-            </div>
-            <div className="group px-8 pb-12 bg-[#F5F5F7] rounded-[40px] text-center overflow-hidden transition-all hover:-translate-y-2 hover:shadow-lg">
-              <figure className="group-hover:scale-105 relative z-0 inline-block transition-all duration-300">
-                <img className="-mx-8 max-w-[calc(100%+4rem)]" src="/upload/images/frontent/tools/RAhq-affiliate-system.png" alt="Affiliate System" width="696" height="426" />
-              </figure>
-              <div className="relative shrink">
-                <h4 className="mb-3 font-bold">
-                  Affiliate System
-                </h4>
-                <p className="text-[14px]">Ability to invite friends, and earn commission from their first purchase.</p>
-              </div>
-            </div>
-            <div className="group px-8 pb-12 bg-[#F5F5F7] rounded-[40px] text-center overflow-hidden transition-all hover:-translate-y-2 hover:shadow-lg">
-              <figure className="group-hover:scale-105 relative z-0 inline-block transition-all duration-300">
-                <img className="-mx-8 max-w-[calc(100%+4rem)]" src="/upload/images/frontent/tools/mPWB-easy-export.png" alt="Easy Export" width="696" height="426" />
-              </figure>
-              <div className="relative shrink">
-                <h4 className="mb-3 font-bold">
-                  Easy Export
-                </h4>
-                <p className="text-[14px]">Export generated content as plain text, PDF, Word or HTML easily.</p>
-              </div>
-            </div>
-            <div className="group px-8 pb-12 bg-[#F5F5F7] rounded-[40px] text-center overflow-hidden transition-all hover:-translate-y-2 hover:shadow-lg">
-              <figure className="group-hover:scale-105 relative z-0 inline-block transition-all duration-300">
-                <img className="-mx-8 max-w-[calc(100%+4rem)]" src="/upload/images/frontent/tools/rIwa-support-platform.png" alt="Support Platform" width="696" height="426" />
-              </figure>
-              <div className="relative shrink">
-                <h4 className="mb-3 font-bold">
-                  Support Platform
-                </h4>
-                <p className="text-[14px]">Access and mage support tickets from your dashboard.</p>
-              </div>
-            </div> */}
-
           </div>
         </div>
       </div>
