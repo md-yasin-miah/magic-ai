@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useEffect, useRef, useState } from 'react';
 
-const ScrollAwareSection = ({ children, className }) => {
+const ScrollAwareSection = ({ children, className, id }) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -33,6 +33,7 @@ const ScrollAwareSection = ({ children, className }) => {
 
   return (
     <section
+      id={id}
       ref={sectionRef}
       className={`site-section ${className} transition-all duration-700 md:translate-y-8 md:opacity-0 [&.lqd-is-in-view]:translate-y-0 [&.lqd-is-in-view]:opacity-100 ${isVisible ? 'lqd-is-in-view' : ''}`}
     >
@@ -46,4 +47,5 @@ export default ScrollAwareSection;
 ScrollAwareSection.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
+  id: PropTypes.string,
 };
