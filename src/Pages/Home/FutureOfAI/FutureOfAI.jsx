@@ -36,18 +36,20 @@ const FutureOfAI = () => {
       </section>
       <ScrollAwareSection>
         <div className='container'>
-          <div className="lqd-tabs" data-lqd-tabs-style="1">
-            <div className="lqd-tabs-triggers mb-9 grid grid-cols-5 justify-between gap-8 max-lg:grid-cols-3 max-lg:gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
-              {futureAITabContentData.map((tab) => (
-                <button key={tab.id} className={`transition-all p-7 text-[1.25rem] text-center border rounded-xl font-heading font-medium hover:text-heading-foreground ${activeTab === tab.id ? 'lqd-is-active' : ''}`} onClick={() => handleTabClick(tab.id)} data-target={`#${tab.id}`}>
-                  {tab.buttonTxt}
-                </button>
-              ))}
-            </div>
-            <div className="lqd-tabs-content-wrap">
-              {futureAITabContentData.map((tab) => (
-                <FutureAITabContent key={tab.id} {...tab} activeTab={activeTab} handleTabClick={handleTabClick} />
-              ))}
+          <div className="rounded-[50px] border p-20 max-xl:px-10 max-lg:py-12 max-sm:px-5">
+            <div className="lqd-tabs" data-lqd-tabs-style="1">
+              <div className="lqd-tabs-triggers mb-9 grid grid-cols-5 justify-between gap-8 max-lg:grid-cols-3 max-lg:gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
+                {futureAITabContentData.map((tab) => (
+                  <button key={tab.id} className={`transition-all p-7 text-[1.25rem] text-center border rounded-xl font-heading font-medium hover:text-headingForeground ${activeTab === tab.id ? 'lqd-is-active' : ''}`} onClick={() => handleTabClick(tab.id)} data-target={`#${tab.id}`}>
+                    {tab.buttonTxt}
+                  </button>
+                ))}
+              </div>
+              <div className="lqd-tabs-content-wrap">
+                {futureAITabContentData.map((tab) => (
+                  <FutureAITabContent key={tab.id} {...tab} activeTab={activeTab} handleTabClick={handleTabClick} />
+                ))}
+              </div>
             </div>
           </div>
         </div>

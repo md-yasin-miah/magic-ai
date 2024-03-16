@@ -18,7 +18,7 @@ const FutureAITabContent = ({ id, smTitle, title, description, imageSrc, alt, im
             <figure className="mb-6 w-full">
               <img className="w-full rounded-2xl shadow-[0px_3px_45px_rgba(0,0,0,0.07)] transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.025] group-hover:shadow-[0px_20px_65px_rgba(0,0,0,0.05)]" width="878" height="748" src={imageSrc} alt={alt} />
             </figure>
-            <p className="text-lg font-semibold text-heading-foreground">{imageDesc}</p>
+            <p className="text-lg font-semibold text-headingForeground">{imageDesc}</p>
             <p className="text-sm text-heading-foreground">{poweredBy}.</p>
           </div>
         </div>
