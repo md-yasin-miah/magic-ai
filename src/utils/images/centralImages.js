@@ -9,6 +9,12 @@ import tools_4 from './../../assets/magicTools/RAhq-affiliate-system.png';
 import tools_5 from './../../assets/magicTools/mPWB-easy-export.png';
 import tools_6 from './../../assets/magicTools/rIwa-support-platform.png';
 import howItWorksBG from './../../assets/steps-bg.jpg';
+import textGeneratorImg from '../../assets/futureAI/text-generator.jpeg';
+import imgGeneratorImg from '../../assets/futureAI/image-generator.jpeg';
+import codeGeneratorImg from '../../assets/futureAI/code-generator.jpeg';
+import aiGeneratorImg from '../../assets/futureAI/ai-chat.jpeg';
+import aiSpeechImg from '../../assets/futureAI/ai-speech.jpeg';
+
 export const centralImages = {
     upperNavBG,
     logo,
@@ -19,5 +25,10 @@ export const centralImages = {
     tools_4,
     tools_5,
     tools_6,
-    howItWorksBG
+    howItWorksBG,
+    textGeneratorImg,
+    imgGeneratorImg,
+    codeGeneratorImg,
+    aiGeneratorImg,
+    aiSpeechImg
 };
