@@ -1,19 +1,20 @@
 /* eslint-disable */
-import upperNavBG from './../../assets/upperNav/upperNav.png';
-import logo from './../../assets/logo/logo.svg';
-import logoDark from './../../assets/logo/logo-dark.svg';
-import tools_1 from './../../assets/magicTools/v6sP-test.png';
-import tools_2 from './../../assets/magicTools/Payments100.jpg';
-import tools_3 from './../../assets/magicTools/NZBW-multilingual.png';
-import tools_4 from './../../assets/magicTools/RAhq-affiliate-system.png';
-import tools_5 from './../../assets/magicTools/mPWB-easy-export.png';
-import tools_6 from './../../assets/magicTools/rIwa-support-platform.png';
-import howItWorksBG from './../../assets/steps-bg.jpg';
-import textGeneratorImg from '../../assets/futureAI/text-generator.jpeg';
-import imgGeneratorImg from '../../assets/futureAI/image-generator.jpeg';
-import codeGeneratorImg from '../../assets/futureAI/code-generator.jpeg';
-import aiGeneratorImg from '../../assets/futureAI/ai-chat.jpeg';
-import aiSpeechImg from '../../assets/futureAI/ai-speech.jpeg';
+import upperNavBG from '/src/assets/image/upperNav/upperNav.png';
+import logo from '/src/assets/image/logo/logo.svg';
+import logoDark from '/src/assets/image/logo/logo-dark.svg';
+import tools_1 from '/src/assets/image/magicTools/v6sP-test.png';
+import tools_2 from '/src/assets/image/magicTools/Payments100.jpg';
+import tools_3 from '/src/assets/image/magicTools/NZBW-multilingual.png';
+import tools_4 from '/src/assets/image/magicTools/RAhq-affiliate-system.png';
+import tools_5 from '/src/assets/image/magicTools/mPWB-easy-export.png';
+import tools_6 from '/src/assets/image/magicTools/rIwa-support-platform.png';
+import howItWorksBG from '/src/assets/image/steps-bg.jpg';
+import textGeneratorImg from '/src/assets/image/futureAI/text-generator.jpeg';
+import imgGeneratorImg from '/src/assets/image/futureAI/image-generator.jpeg';
+import codeGeneratorImg from '/src/assets/image/futureAI/code-generator.jpeg';
+import aiGeneratorImg from '/src/assets/image/futureAI/ai-chat.jpeg';
+import aiSpeechImg from '/src/assets/image/futureAI/ai-speech.jpeg';
+import testimonialBG from '/src/assets/image/testimonials/world-map.png';
 
 export const centralImages = {
     upperNavBG,
@@ -30,5 +31,6 @@ export const centralImages = {
     imgGeneratorImg,
     codeGeneratorImg,
     aiGeneratorImg,
-    aiSpeechImg
+    aiSpeechImg,
+    testimonialBG
 };
