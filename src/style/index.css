@@ -12,7 +12,8 @@
   --background: 240 25% 98%;
   --foreground: 216 11% 45%;
   --heading-background: 0 0% 100%;
-  --heading-foreground: 213 13% 14% --fontPrimary: "Golos Text", sans-serif;
+  --heading-foreground: 213 13% 14%;
+  --fontPrimary: "Golos Text", sans-serif;
   --fontSecondary: "Onest", sans-serif;
 
   font-synthesis: none;
@@ -27,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Onest, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  font-family: var(--fontSecondary), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
   color: hsl(var(--heading-foreground))
 }
 
@@ -79,7 +80,7 @@ h5 {
 }
 
 h6 {
-  font-family: Golos Text, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  font-family: var(--fontPrimary), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
   font-size: 12px;
   font-weight: 500
 }
