@@ -6,6 +6,7 @@ import MagicTools from "./MagicTools/MagicTools";
 import HowItWorks from "./howItWorks/HowItWorks";
 import Testimonials from "./Testimonials/Testimonials";
 import CustomTemplates from "./CustomTemplates/CustomTemplates";
+import FAQ from "./FAQ/FAQ";
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <MagicTools />
             <HowItWorks />
             <Testimonials />
+            <FAQ />
         </React.Fragment>
     );
 };
