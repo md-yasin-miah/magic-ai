@@ -285,6 +285,28 @@ const customTemplateCardData = [
         description: "Boost your Instagram reach with relevant hashtags. Generate optimal, trending hashtags and increase your visibility."
     }
 ]
+const faqData = [
+    {
+      question: "How does it generate responses?",
+      answer: "MagicAI uses the most popular AI models such as GPT, Dall-E, Ada to create text, image, code and more within seconds. The process is simple. All you have to do is provide a topic or idea, and our AI-based generator will take care of the rest."
+    },
+    {
+      question: "Can I create templates or chat bots?",
+      answer: "You can use pre-made templates and examples for various content types and industries to help you get started quickly. You can even create your own chatbot or custom prompt template for further customization."
+    },
+    {
+      question: "Should I buy regular or extended license?",
+      answer: "If you plan to charge end users for the final product or service. You should buy the extended license in compliance with Envato’s terms of service same as other projects https://codecanyon.net/licenses/standard"
+    },
+    {
+      question: "Can I translate the script into another language?",
+      answer: "Yes! MagicAI's multilingual capabilities apply to both content generation and dashboard language. You can easily translate it into other languages. A built-in translation tool is coming soon!"
+    },
+    {
+      question: "Is there a mobile app for MagicAI?",
+      answer: "MagicAI provides an almost native-app experience thanks to its mobile-first approach. The entire layout is responsive and works great on any device regardless of the size."
+    }
+  ];
 
 export {
     NavItem,
@@ -293,6 +315,7 @@ export {
     toolsCardData,
     futureAITabContentData,
     customTemplateItemListData,
-    customTemplateCardData
+    customTemplateCardData,
+    faqData
 }
 
