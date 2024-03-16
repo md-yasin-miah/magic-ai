@@ -84,4 +84,13 @@ const careerData = [
 
 ]
 
-export { NavItem, FutureOfAIData, careerData }
+const futureAITabContentData = [
+    {
+        id: "ai-text-generator",
+        title: "Say goodbye to writer’s block",
+        description: "Intelligent Writing Assistant",
+        imageSrc: ""
+    }
+];
+
+export { NavItem, FutureOfAIData, careerData, futureAITabContentData }
