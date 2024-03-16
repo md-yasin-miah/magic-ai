@@ -2,6 +2,7 @@ import React from "react";
 import UpperNav from "./UpperNav/UpperNav";
 import MainNav from "./MainNav/MainNav";
 import FutureOfAI from "./FutureOfAI/FutureOfAI";
+import MagicTools from "./MagicTools/MagicTools";
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
             <UpperNav />
             <MainNav />
             <FutureOfAI />
+            <MagicTools />
         </React.Fragment>
     );
 };
