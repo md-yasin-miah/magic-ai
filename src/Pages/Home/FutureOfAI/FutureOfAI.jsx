@@ -1,9 +1,16 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
-import { FutureOfAIData, careerData } from "../../../utils/mock/mockData";
+import { FutureOfAIData, careerData, futureAITabContentData } from "../../../utils/mock/mockData";
 import ScrollAwareSection from "../../../components/ScrollAwareSection";
 const SvgIconWrapper = ({ IconComponent }) => <IconComponent />;
+import FutureAITabContent from "../../../components/FutureAITabContent";
 
 const FutureOfAI = () => {
+  const [activeTab, setActiveTab] = useState(futureAITabContentData[0].id);
+
+  const handleTabClick = (id) => {
+    setActiveTab(id);
+  };
   return (
     <section id='features'>
       <section className='site-section pb-20 pt-32 transition-all duration-700 md:translate-y-8 md:opacity-0 [&.lqd-is-in-view]:translate-y-0 [&.lqd-is-in-view]:opacity-100 lqd-is-in-view'>
@@ -27,6 +34,26 @@ const FutureOfAI = () => {
           </div>
         </div>
       </section>
+      <ScrollAwareSection>
+        <div className='container'>
+          <div className="rounded-[50px] border p-20 max-xl:px-10 max-lg:py-12 max-sm:px-5">
+            <div className="lqd-tabs" data-lqd-tabs-style="1">
+              <div className="lqd-tabs-triggers mb-9 grid grid-cols-5 justify-between gap-8 max-lg:grid-cols-3 max-lg:gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
+                {futureAITabContentData.map((tab) => (
+                  <button key={tab.id} className={`transition-all p-7 text-[1.25rem] text-center border rounded-xl font-heading font-medium hover:text-headingForeground ${activeTab === tab.id ? 'lqd-is-active' : ''}`} onClick={() => handleTabClick(tab.id)} data-target={`#${tab.id}`}>
+                    {tab.buttonTxt}
+                  </button>
+                ))}
+              </div>
+              <div className="lqd-tabs-content-wrap">
+                {futureAITabContentData.map((tab) => (
+                  <FutureAITabContent key={tab.id} {...tab} activeTab={activeTab} handleTabClick={handleTabClick} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </ScrollAwareSection>
       <ScrollAwareSection className='py-20'>
         <div className="container">
           <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
