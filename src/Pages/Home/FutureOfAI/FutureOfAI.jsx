@@ -40,7 +40,7 @@ const FutureOfAI = () => {
             <div className="lqd-tabs" data-lqd-tabs-style="1">
               <div className="lqd-tabs-triggers mb-9 grid grid-cols-5 justify-between gap-8 max-lg:grid-cols-3 max-lg:gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
                 {futureAITabContentData.map((tab) => (
-                  <button key={tab.id} className={`transition-all p-7 text-[1.25rem] text-center border rounded-xl font-heading font-medium hover:text-headingForeground ${activeTab === tab.id ? 'lqd-is-active' : ''}`} onClick={() => handleTabClick(tab.id)} data-target={`#${tab.id}`}>
+                  <button key={tab.id} className={`transition-all p-7 text-[1.25rem] text-center border rounded-xl font-secondary font-medium hover:text-headingForeground [&.lqd-is-active]:bg-white [&.lqd-is-active]:text-headingForeground [&.lqd-is-active]:border-white [&.lqd-is-active]:shadow-lg ${activeTab === tab.id ? 'lqd-is-active' : ''}`} onClick={() => handleTabClick(tab.id)} data-target={`#${tab.id}`}>
                     {tab.buttonTxt}
                   </button>
                 ))}
