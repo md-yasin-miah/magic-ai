@@ -9,7 +9,6 @@ const NavItem = [
     { id: 5, itemName: 'Pricing', link: '/pricing' },
     { id: 6, itemName: 'FAQ', link: '/faq' }
 ]
-
 const FutureOfAIData = [
     {
         id: 1,
@@ -48,7 +47,6 @@ const FutureOfAIData = [
         description: 'Access and manage your support tickets from your dashboard.'
     }
 ]
-
 const careerData = [
     {
         id: 1,
@@ -122,16 +120,66 @@ const toolsCardData = [
         img: centralImages.tools_6
     }
 ]
-
 const futureAITabContentData = [
     {
         id: "ai-text-generator",
-        title: "Say goodbye to writer’s block",
-        description: "Intelligent Writing Assistant",
+        buttonTxt: "AI Text Generator",
+        smTitle: "Say goodbye to writer’s block",
+        title: "Intelligent Writing Assistant",
+        description: "Writer is designed to help you <strong>generate high-quality texts instantly</strong>, without breaking a sweat. With our intuitive interface and powerful features, you can easily edit, export or publish your AI-generated result.",
         imageSrc: centralImages?.textGeneratorImg,
         alt: "Text Generator",
+        imageDesc: "Generate, edit, export.",
         backgroundColor: "#F3E5F5",
-        poweredBy: "OpenAI"
+        poweredBy: "Powered by OpenAI"
+    },
+    {
+        id: "ai-image-generator",
+        buttonTxt: "AI Image Generator",
+        smTitle: "Unleash your creativity",
+        title: "Create eye-catching images and graphics.",
+        description: "Generate high quality images for a wide range of applications",
+        imageSrc: centralImages?.imgGeneratorImg,
+        alt: "Image Generator",
+        imageDesc: "Imagine, Generate, Publish.",
+        backgroundColor: "#DFE5EB",
+        poweredBy: "Powered by Dall-E"
+    },
+    {
+        id: "ai-code-generator",
+        buttonTxt: "AI Code Generator",
+        smTitle: "The future of development'",
+        title: "Generate high quality code in no time.",
+        description: "MagicAI is designed to make coding faster, easier, and more efficient than ever before. Whether you’re a seasoned developer or a coding newbie, our tool will help you streamline your coding process and get your projects up and running in no time.",
+        imageSrc: centralImages?.codeGeneratorImg,
+        alt: "Code Generator",
+        imageDesc: "and more efficient than ever before. Whether you’re a seasoned developer or a coding newbie",
+        backgroundColor: "#DDE6FF",
+        poweredBy: "Fix. Improve. Generate."
+    },
+    {
+        id: "ai-chat-bot",
+        buttonTxt: "AI Chat Bot",
+        smTitle: "Intuitive / Human like Chatbot ",
+        title: "Meet your next virtual assistant.",
+        description: "Get instant answers to your questions, no matter the topic. Whether you’re looking to book a reservation, get product recommendations, or just chat about the weather, MagicAI is always ready and willing to help.",
+        imageSrc: centralImages?.aiGeneratorImg,
+        alt: "AI Chat Generator",
+        imageDesc: "Chat, Solve, Repeat.",
+        backgroundColor: "#F9DDDF",
+        poweredBy: "Powered by OpenAI"
+    },
+    {
+        id: "ai-speech-to-text",
+        buttonTxt: "AI Speech To Text",
+        smTitle: "Say goodbye to writer’s block",
+        title: "Transcribe your speech into text.",
+        description: "Accurately transcribe your recordings in just minutes. With our user-friendly interface, you can upload your files and have them transcribed in a matter of clicks.",
+        imageSrc: centralImages?.aiSpeechImg,
+        alt: "AI Speech Generator",
+        imageDesc: "Upload, Analyze, Generate.",
+        backgroundColor: "#FFF8EB",
+        poweredBy: "Powered by OpenAI"
     }
 ];
 
