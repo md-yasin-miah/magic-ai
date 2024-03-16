@@ -2,8 +2,8 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import { FutureOfAIData, careerData, futureAITabContentData } from "../../../utils/mock/mockData";
 import ScrollAwareSection from "../../../components/ScrollAwareSection";
-const SvgIconWrapper = ({ IconComponent }) => <IconComponent />;
 import FutureAITabContent from "../../../components/FutureAITabContent";
+const SvgIconWrapper = ({ IconComponent }) => <IconComponent />;
 
 const FutureOfAI = () => {
   const [activeTab, setActiveTab] = useState(futureAITabContentData[0].id);
@@ -13,7 +13,7 @@ const FutureOfAI = () => {
   };
   return (
     <section id='features'>
-      <section className='site-section pb-20 pt-32 transition-all duration-700 md:translate-y-8 md:opacity-0 [&.lqd-is-in-view]:translate-y-0 [&.lqd-is-in-view]:opacity-100 lqd-is-in-view'>
+      <ScrollAwareSection className='pb-20 pt-32'>
         <div className='container'>
           <header className='mx-auto text-center w-2/5 mb-14 max-xl:w-8/12 max-lg:w-10/12 max-md:w-full'>
             <h2 className='mb-[0.45em] font-secondary font-bold text-[53px] text-headingForeground'>The future of AI.</h2>
@@ -33,7 +33,7 @@ const FutureOfAI = () => {
             ))}
           </div>
         </div>
-      </section>
+      </ScrollAwareSection>
       <ScrollAwareSection>
         <div className='container'>
           <div className="rounded-[50px] border p-20 max-xl:px-10 max-lg:py-12 max-sm:px-5">

@@ -43,6 +43,34 @@ const SupportPlatformSVG = () => {
         </svg>
     )
 }
+const ProductDescSVG = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="24" style={{ display: 'block', verticalAlign: 'middle' }}>
+            <path d="M319 806h322v-60H319v60Zm0-170h322v-60H319v60Zm-99 340q-24 0-42-18t-18-42V236q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm331-554h189L551 236v186Z"></path>
+        </svg>
+    )
+}
+const ArticleSVG = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="24" style={{ display: 'block', verticalAlign: 'middle' }}>
+            <path d="M140 936q-24.75 0-42.375-17.625T80 876V216l67 67 66-67 67 67 67-67 66 67 67-67 67 67 66-67 67 67 67-67 66 67 67-67v660q0 24.75-17.625 42.375T820 936H140Zm0-60h310V596H140v280Zm370 0h310V766H510v110Zm0-170h310V596H510v110ZM140 536h680V416H140v120Z"></path>
+        </svg>
+    )
+}
+const TestimonialSVG = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="24" style={{ display: 'block', verticalAlign: 'middle' }}>
+            <path d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"></path>
+        </svg>
+    )
+}
+const BlogConclusionSVG = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="24" style={{ display: 'block', verticalAlign: 'middle' }}>
+            <path d="M80 236v-60h800v60H80Zm210 250V386h380v100H290Zm0 240V626h380v100H290Z"></path>
+        </svg>
+    )
+}
 
 export {
     AIGeneratorSVG,
@@ -50,5 +78,9 @@ export {
     PaymentGatewaySVG,
     MultiLingualSVG,
     CustomTemplateSVG,
-    SupportPlatformSVG
+    SupportPlatformSVG,
+    ProductDescSVG,
+    ArticleSVG,
+    TestimonialSVG,
+    BlogConclusionSVG
 };
