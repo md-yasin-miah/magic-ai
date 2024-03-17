@@ -1,8 +1,37 @@
 // import { useEffect } from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide"
 import ScrollAwareSection from "../../../components/ScrollAwareSection"
 import { centralImages } from "../../../utils/images/centralImages"
+import { testimonialData } from "../../../utils/mock/mockData"
 
 const Testimonials = () => {
+  const options2 = {
+    // perPage: 1,
+    type: 'loop',
+    // perMove: 1,
+    // autoplay: false,
+    // arrows: true,
+    classes: {
+      prev: 'splide__arrow--prev -translate-x-20 -translate-y-1/2 opacity-40',
+      next: 'splide__arrow--next translate-x-20 -translate-y-1/2 opacity-40',
+    },
+    pagination: false,
+    // width: '100%',
+    // height: '100%',
+  }
+  const options = {
+    // perPage: 1,
+    type: 'loop',
+    perPage: 3,
+    focus: 'center',
+    // perMove: 1,
+    // autoplay: false,
+    arrows: false,
+    pagination: false,
+    drag: false,
+    // width: '100%',
+    // height: '100%',
+  }
   // useEffect(() => {
   //   // Load Flickity script from CDN
   //   const script = document.createElement('script');
@@ -54,13 +83,13 @@ const Testimonials = () => {
           <div className="max-lg:11/12 mx-auto w-8/12 max-md:w-full">
             <div className="mb-20">
               <div
-                className="mx-auto mb-7 w-[235px] gap-5 flickity-enabled" data-flickity="{ &quot;asNavFor&quot;: &quot;.testimonials-main-carousel&quot;, &quot;contain&quot;: false, &quot;pageDots&quot;: false, &quot;cellAlign&quot;: &quot;center&quot;, &quot;prevNextButtons&quot;: false, &quot;wrapAround&quot;: true, &quot;draggable&quot;: false }"
+                className="mx-auto mb-7 w-[235px] gap-5" data-flickity="{ &quot;asNavFor&quot;: &quot;.testimonials-main-carousel&quot;, &quot;contain&quot;: false, &quot;pageDots&quot;: false, &quot;cellAlign&quot;: &quot;center&quot;, &quot;prevNextButtons&quot;: false, &quot;wrapAround&quot;: true, &quot;draggable&quot;: false }"
                 style={{
                   maskImage: 'linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100% )',
                   WebkitMaskImage: 'linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100% )'
                 }}
                 tabIndex="0">
-                <div
+                {/* <div
                   className="flickity-viewport"
                   style={{ height: '157px', touchAction: 'pan-y' }}
                 >
@@ -68,7 +97,7 @@ const Testimonials = () => {
                     style={{ left: '0px', transform: 'translateX(-43.96%)' }}
                   >
                     <div
-                      className="w1/3 group cursor-pointer pb-[16px] pt-9 text-center text-[15px] font-medium"
+                      className="w1/3 group cursor-pointer pb-[16px] pt-9 text-center text-[15px] font-medium is-selected is-nav-selected"
                       style={{ position: 'absolute', left: '0px', transform: 'translateX(281.26%)' }}
                       aria-hidden="true"
                     >
@@ -107,43 +136,40 @@ const Testimonials = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                <Splide options={options}>
+                  {
+                    testimonialData.map((testimonial) => (
+                      <SplideSlide key={testimonial.id}>
+                        <div className="w1/3 group cursor-pointer pb-[16px] pt-9 text-center text-[15px] font-medium">
+                          <figure className="size-11 mx-auto mb-4 overflow-hidden rounded-full transition-all group-[&amp;.is-nav-selected]:-translate-y-4 group-[&amp;.is-nav-selected]:scale-[1.75] group-[&amp;.is-nav-selected]:border-[5px] group-[&amp;.is-nav-selected]:border-white group-[&amp;.is-nav-selected]:shadow-sm max-sm:group-[&amp;.is-nav-selected]:scale-150">
+                            <img className="h-full w-full object-cover object-center" src={testimonial.avatar} alt="Tom Daniel" />
+                          </figure>
+                          <div className="whitespace-nowrap opacity-0 transition-all group-[&amp;.is-nav-selected]:opacity-100">
+                            <p className="text-heading-foreground">{testimonial.client}</p>
+                            <p className="text-heading-foreground opacity-15">{testimonial.position}</p>
+                          </div>
+                        </div>
+                      </SplideSlide>
+                    ))
+                  }
+                </Splide>
               </div>
-              <div className="testimonials-main-carousel text-center text-[26px] leading-[1.27em] text-heading-foreground max-sm:text-lg max-sm:[&amp;_.flickity-button-icon]:!left-1/4 max-sm:[&amp;_.flickity-button-icon]:!top-1/4 max-sm:[&amp;_.flickity-button-icon]:!h-1/2 max-sm:[&amp;_.flickity-button-icon]:!w-1/2 [&amp;_.flickity-button.next]:-right-16 max-md:[&amp;_.flickity-button.next]:-right-10 [&amp;_.flickity-button.previous]:-left-16 max-md:[&amp;_.flickity-button.previous]:-left-10 [&amp;_.flickity-button]:opacity-40 [&amp;_.flickity-button]:transition-all [&amp;_.flickity-button]:hover:bg-transparent [&amp;_.flickity-button]:hover:opacity-100 [&amp;_.flickity-button]:focus:shadow-none max-sm:[&amp;_.flickity-button]:relative max-sm:[&amp;_.flickity-button]:!left-auto max-sm:[&amp;_.flickity-button]:!right-auto max-sm:[&amp;_.flickity-button]:top-auto max-sm:[&amp;_.flickity-button]:!mx-4 max-sm:[&amp;_.flickity-button]:translate-y-0 flickity-enabled is-draggable" data-flickity="{ &quot;contain&quot;: true, &quot;wrapAround&quot;: true, &quot;pageDots&quot;: false, &quot;adaptiveHeight&quot;: true }" tabIndex="0">
-                <div
-                  className="flickity-viewport"
-                  style={{ height: '132.062px', touchAction: 'pan-y' }}
-                >
-                  <div className="flickity-slider"
-                    style={{ left: '0px', transform: 'translateX(-200%)' }}
-                  >
-                    <div className="w-full shrink-0 grow-0 basis-full"
-                      style={{ position: 'absolute', left: '0px', transform: 'translateX(0%)' }}
-                      aria-hidden="true"
-                    >
-                      <blockquote className="max-sm:mb-7">
-                        <p>““Not only did it save me time, but it also helped me
-                          produce content that was more engaging and
-                          effective than what I had been creating on my own.””</p>
-                      </blockquote>
-                    </div>
-                    <div
-                      className="w-full shrink-0 grow-0 basis-full"
-                      style={{ position: 'absolute', left: '0px', transform: 'translateX(100%)' }}
-                      aria-hidden="true"
-                    >
-                      <blockquote className="max-sm:mb-7">
-                        <p>“As a freelance writer, I was looking for a tool that could help me generate ideas and write faster. This AI Text website has done that and more.”</p>
-                      </blockquote>
-                    </div>
-                    <div
-                      className="w-full shrink-0 grow-0 basis-full is-selected"
-                      style={{ position: 'absolute', left: '0px', transform: 'translateX(200%)' }}
-                    >
-                      <blockquote className="max-sm:mb-7">
-                        <p>“The customer support team has been incredibly helpful whenever I’ve had any questions. I can’t imagine going back to my old content-creation methods!”</p>
-                      </blockquote>
-                    </div></div></div><button className="flickity-button flickity-prev-next-button previous" type="button" aria-label="Previous"><svg className="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" className="arrow"></path></svg></button><button className="flickity-button flickity-prev-next-button next" type="button" aria-label="Next"><svg className="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" className="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button></div>
+              <div className="cursor-pointer text-center text-[26px] leading-[1.27em] text-heading-foreground max-sm:text-lg max-sm:[&amp;_.flickity-button-icon]:!left-1/4 max-sm:[&amp;_.flickity-button-icon]:!top-1/4 max-sm:[&amp;_.flickity-button-icon]:!h-1/2 max-sm:[&amp;_.flickity-button-icon]:!w-1/2 [&amp;_.flickity-button.next]:-right-16 max-md:[&amp;_.flickity-button.next]:-right-10 [&amp;_.flickity-button.previous]:-left-16 max-md:[&amp;_.flickity-button.previous]:-left-10 [&amp;_.flickity-button]:opacity-40 [&amp;_.flickity-button]:transition-all [&amp;_.flickity-button]:hover:bg-transparent [&amp;_.flickity-button]:hover:opacity-100 [&amp;_.flickity-button]:focus:shadow-none max-sm:[&amp;_.flickity-button]:relative max-sm:[&amp;_.flickity-button]:!left-auto max-sm:[&amp;_.flickity-button]:!right-auto max-sm:[&amp;_.flickity-button]:top-auto max-sm:[&amp;_.flickity-button]:!mx-4 max-sm:[&amp;_.flickity-button]:translate-y-0 flickity-enabled is-draggable" data-flickity="{ &quot;contain&quot;: true, &quot;wrapAround&quot;: true, &quot;pageDots&quot;: false, &quot;adaptiveHeight&quot;: true }" tabIndex="0">
+                <Splide options={options2}>
+                  {
+                    testimonialData.map((testimonial, index) => (
+                      <SplideSlide key={index}>
+                        <div className="w-full shrink-0 grow-0 basis-full">
+                          <blockquote className="max-sm:mb-7">
+                            <p>{testimonial.quote}</p>
+                          </blockquote>
+                        </div>
+                      </SplideSlide>
+                    ))
+                  }
+                </Splide>
+              </div>
             </div>
             <div className="flex justify-center gap-20 opacity-80 max-lg:gap-12 max-sm:gap-4">
               <img className="h-full w-full object-cover object-center"
