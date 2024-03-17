@@ -68,7 +68,7 @@ const Testimonials = () => {
                     style={{ left: '0px', transform: 'translateX(-43.96%)' }}
                   >
                     <div
-                      className="w1/3 group cursor-pointer pb-[16px] pt-9 text-center text-[15px] font-medium"
+                      className="w1/3 group cursor-pointer pb-[16px] pt-9 text-center text-[15px] font-medium is-selected is-nav-selected"
                       style={{ position: 'absolute', left: '0px', transform: 'translateX(281.26%)' }}
                       aria-hidden="true"
                     >
