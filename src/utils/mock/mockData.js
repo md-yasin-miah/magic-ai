@@ -453,6 +453,29 @@ const pricingCardData = [
         ]
     }
 ];
+const testimonialData = [
+    {
+        id: 1,
+        avatar: centralImages?.testimonial_client_1,
+        client: "Peline Jan",
+        position: "Entrepreneur",
+        quote: "“Not only did it save me time, but it also helped me produce content that was more engaging and effective than what I had been creating on my own.”"
+    },
+    {
+        id: 2,
+        avatar: centralImages?.testimonial_client_2,
+        client: "Tom Danial",
+        position: "Writer",
+        quote: "“As a freelance writer, I was looking for a tool that could help me generate ideas and write faster. This AI Text website has done that and more.”"
+    },
+    {
+        id: 3,
+        avatar: centralImages?.testimonial_client_3,
+        client: "Eric Sanchez",
+        position: "UX Designer",
+        quote: "“The customer support team has been incredibly helpful whenever I’ve had any questions. I can’t imagine going back to my old content-creation methods!”"
+    }
+]
 
 export {
     NavItem,
@@ -465,5 +488,6 @@ export {
     faqData,
     latestNewsData,
     pricingTabData,
-    pricingCardData
+    pricingCardData,
+    testimonialData
 }
