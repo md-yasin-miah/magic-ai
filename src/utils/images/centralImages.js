@@ -1,6 +1,7 @@
 /* eslint-disable */
 import upperNavBG from '/src/assets/image/upperNav/upperNav.png';
 import logo from '/src/assets/image/logo/logo.svg';
+import logoWithName from '/src/assets/image/logo/logo-dark.svg';
 import logoDark from '/src/assets/image/logo/logo-dark.svg';
 import tools_1 from '/src/assets/image/magicTools/v6sP-test.png';
 import tools_2 from '/src/assets/image/magicTools/Payments100.jpg';
@@ -15,13 +16,14 @@ import codeGeneratorImg from '/src/assets/image/futureAI/code-generator.jpeg';
 import aiGeneratorImg from '/src/assets/image/futureAI/ai-chat.jpeg';
 import aiSpeechImg from '/src/assets/image/futureAI/ai-speech.jpeg';
 import testimonialBG from '/src/assets/image/testimonials/world-map.png';
-import newsOne from './../../assets/image/news/newsOne.png';
-import newsTwo from './../../assets/image/news/newsTwo.png';
-import newsThree from './../../assets/image/news/newsThree.png';
+import newsOne from '/src/assets/image/news/newsOne.png';
+import newsTwo from '/src/assets/image/news/newsTwo.png';
+import newsThree from '/src/assets/image/news/newsThree.png';
 
 export const centralImages = {
     upperNavBG,
     logo,
+    logoWithName,
     logoDark,
     tools_1,
     tools_2,

@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials/Testimonials";
 import CustomTemplates from "./CustomTemplates/CustomTemplates";
 import FAQ from "./FAQ/FAQ";
 import LatestNews from "./LatestNews/LatestNews";
+import Footer from "./Footer/Footer";
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <Testimonials />
             <FAQ />
             <LatestNews />
+            <Footer />
         </React.Fragment>
     );
 };

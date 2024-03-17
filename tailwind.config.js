@@ -21,6 +21,8 @@ export default {
       'foreground': 'hsl(216, 11%, 45%)',
       'headingBackground': 'hsl(0, 0%, 100%)',
       'headingForeground': 'hsl(213, 13%, 14%)',
+      transparent: 'transparent',
+      current: 'currentColor',
     },
     fontFamily: {
       primary: ['Golos Text', 'sans-serif'],
