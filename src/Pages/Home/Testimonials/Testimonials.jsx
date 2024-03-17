@@ -1,7 +1,34 @@
+// import { useEffect } from "react";
 import ScrollAwareSection from "../../../components/ScrollAwareSection"
 import { centralImages } from "../../../utils/images/centralImages"
 
 const Testimonials = () => {
+  // useEffect(() => {
+  //   // Load Flickity script from CDN
+  //   const script = document.createElement('script');
+  //   script.src = 'https://cdn.jsdelivr.net/npm/flickity@2.2.2/dist/flickity.pkgd.min.js';
+  //   script.async = true;
+  //   document.body.appendChild(script);
+
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
+
+  // useEffect(() => {
+  //   // Initialize Flickity when script is loaded
+  //   if (window.Flickity) {
+  //     new window.Flickity('.flickity-enabled', {
+  //       asNavFor: '.testimonials-main-carousel',
+  //       contain: false,
+  //       pageDots: false,
+  //       cellAlign: 'center',
+  //       prevNextButtons: false,
+  //       wrapAround: true,
+  //       draggable: false
+  //     });
+  //   }
+  // }, []);
   return (
     <ScrollAwareSection className='relative py-10' id='testimonials'>
       <div
@@ -28,7 +55,6 @@ const Testimonials = () => {
             <div className="mb-20">
               <div
                 className="mx-auto mb-7 w-[235px] gap-5 flickity-enabled" data-flickity="{ &quot;asNavFor&quot;: &quot;.testimonials-main-carousel&quot;, &quot;contain&quot;: false, &quot;pageDots&quot;: false, &quot;cellAlign&quot;: &quot;center&quot;, &quot;prevNextButtons&quot;: false, &quot;wrapAround&quot;: true, &quot;draggable&quot;: false }"
-                // style={{maskImage: 'linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100% )' -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100% )' }}
                 style={{
                   maskImage: 'linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100% )',
                   WebkitMaskImage: 'linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100% )'
@@ -36,21 +62,18 @@ const Testimonials = () => {
                 tabIndex="0">
                 <div
                   className="flickity-viewport"
-                  //  style="height: 157px; touch-action: pan-y;"
                   style={{ height: '157px', touchAction: 'pan-y' }}
                 >
                   <div className="flickity-slider"
-                    //  style="left: 0px; transform: translateX(-43.96%);"
                     style={{ left: '0px', transform: 'translateX(-43.96%)' }}
                   >
                     <div
                       className="w1/3 group cursor-pointer pb-[16px] pt-9 text-center text-[15px] font-medium"
-                      // style="position: absolute; left: 0px; transform: translateX(281.26%);" 
                       style={{ position: 'absolute', left: '0px', transform: 'translateX(281.26%)' }}
                       aria-hidden="true"
                     >
                       <figure className="size-11 mx-auto mb-4 overflow-hidden rounded-full transition-all group-[&amp;.is-nav-selected]:-translate-y-4 group-[&amp;.is-nav-selected]:scale-[1.75] group-[&amp;.is-nav-selected]:border-[5px] group-[&amp;.is-nav-selected]:border-white group-[&amp;.is-nav-selected]:shadow-sm max-sm:group-[&amp;.is-nav-selected]:scale-150">
-                        <img className="h-full w-full object-cover object-center" src="/testimonialAvatar/202306020840avatar-1.jpg" alt="Peline Jan" />
+                        <img className="h-full w-full object-cover object-center" src={centralImages.testimonial_client_1} alt="Peline Jan" />
                       </figure>
                       <div className="whitespace-nowrap opacity-0 transition-all group-[&amp;.is-nav-selected]:opacity-100">
                         <p className="text-heading-foreground">Peline Jan</p>
@@ -63,7 +86,7 @@ const Testimonials = () => {
                       aria-hidden="true"
                     >
                       <figure className="size-11 mx-auto mb-4 overflow-hidden rounded-full transition-all group-[&amp;.is-nav-selected]:-translate-y-4 group-[&amp;.is-nav-selected]:scale-[1.75] group-[&amp;.is-nav-selected]:border-[5px] group-[&amp;.is-nav-selected]:border-white group-[&amp;.is-nav-selected]:shadow-sm max-sm:group-[&amp;.is-nav-selected]:scale-150">
-                        <img className="h-full w-full object-cover object-center" src="/testimonialAvatar/202306020840avatar-3.jpg" alt="Tom Daniel" />
+                        <img className="h-full w-full object-cover object-center" src={centralImages.testimonial_client_2} alt="Tom Daniel" />
                       </figure>
                       <div className="whitespace-nowrap opacity-0 transition-all group-[&amp;.is-nav-selected]:opacity-100">
                         <p className="text-heading-foreground">Tom Daniel</p>
@@ -76,7 +99,7 @@ const Testimonials = () => {
                       style={{ position: 'absolute', left: '0px', transform: 'translateX(189.51%)' }}
                     >
                       <figure className="size-11 mx-auto mb-4 overflow-hidden rounded-full transition-all group-[&amp;.is-nav-selected]:-translate-y-4 group-[&amp;.is-nav-selected]:scale-[1.75] group-[&amp;.is-nav-selected]:border-[5px] group-[&amp;.is-nav-selected]:border-white group-[&amp;.is-nav-selected]:shadow-sm max-sm:group-[&amp;.is-nav-selected]:scale-150">
-                        <img className="h-full w-full object-cover object-center" src="/testimonialAvatar/202306020840avatar-2.jpg" alt="Eric Sanchez" />
+                        <img className="h-full w-full object-cover object-center" src={centralImages.testimonial_client_3} alt="Eric Sanchez" />
                       </figure>
                       <div className="whitespace-nowrap opacity-0 transition-all group-[&amp;.is-nav-selected]:opacity-100">
                         <p className="text-heading-foreground">Eric Sanchez</p>
@@ -87,21 +110,14 @@ const Testimonials = () => {
                 </div>
               </div>
               <div className="testimonials-main-carousel text-center text-[26px] leading-[1.27em] text-heading-foreground max-sm:text-lg max-sm:[&amp;_.flickity-button-icon]:!left-1/4 max-sm:[&amp;_.flickity-button-icon]:!top-1/4 max-sm:[&amp;_.flickity-button-icon]:!h-1/2 max-sm:[&amp;_.flickity-button-icon]:!w-1/2 [&amp;_.flickity-button.next]:-right-16 max-md:[&amp;_.flickity-button.next]:-right-10 [&amp;_.flickity-button.previous]:-left-16 max-md:[&amp;_.flickity-button.previous]:-left-10 [&amp;_.flickity-button]:opacity-40 [&amp;_.flickity-button]:transition-all [&amp;_.flickity-button]:hover:bg-transparent [&amp;_.flickity-button]:hover:opacity-100 [&amp;_.flickity-button]:focus:shadow-none max-sm:[&amp;_.flickity-button]:relative max-sm:[&amp;_.flickity-button]:!left-auto max-sm:[&amp;_.flickity-button]:!right-auto max-sm:[&amp;_.flickity-button]:top-auto max-sm:[&amp;_.flickity-button]:!mx-4 max-sm:[&amp;_.flickity-button]:translate-y-0 flickity-enabled is-draggable" data-flickity="{ &quot;contain&quot;: true, &quot;wrapAround&quot;: true, &quot;pageDots&quot;: false, &quot;adaptiveHeight&quot;: true }" tabIndex="0">
-
-
-
-
                 <div
                   className="flickity-viewport"
-                  // style="height: 132.062px; touch-action: pan-y;"
                   style={{ height: '132.062px', touchAction: 'pan-y' }}
                 >
                   <div className="flickity-slider"
-                    // style="left: 0px; transform: translateX(-200%);"
                     style={{ left: '0px', transform: 'translateX(-200%)' }}
                   >
                     <div className="w-full shrink-0 grow-0 basis-full"
-                      // style="position: absolute; left: 0px; transform: translateX(0%);"
                       style={{ position: 'absolute', left: '0px', transform: 'translateX(0%)' }}
                       aria-hidden="true"
                     >
@@ -113,7 +129,6 @@ const Testimonials = () => {
                     </div>
                     <div
                       className="w-full shrink-0 grow-0 basis-full"
-                      //  style="position: absolute; left: 0px; transform: translateX(100%);"
                       style={{ position: 'absolute', left: '0px', transform: 'translateX(100%)' }}
                       aria-hidden="true"
                     >
@@ -123,7 +138,6 @@ const Testimonials = () => {
                     </div>
                     <div
                       className="w-full shrink-0 grow-0 basis-full is-selected"
-                      // style="position: absolute; left: 0px; transform: translateX(200%);"
                       style={{ position: 'absolute', left: '0px', transform: 'translateX(200%)' }}
                     >
                       <blockquote className="max-sm:mb-7">
@@ -133,26 +147,21 @@ const Testimonials = () => {
             </div>
             <div className="flex justify-center gap-20 opacity-80 max-lg:gap-12 max-sm:gap-4">
               <img className="h-full w-full object-cover object-center"
-                // style="max-width: 48px; max-height: 48px;" 
                 style={{ maxWidth: '48px', maxHeight: '48px' }}
-                src="/clientAvatar/1c.svg" alt="Envato" title="Envato"
+                src={centralImages.testimonial_avatar_1} alt="Envato" title="Envato"
               />
               <img className="h-full w-full object-cover object-center"
-                // style="max-width: 48px; max-height: 48px;"
                 style={{ maxWidth: '48px', maxHeight: '48px' }}
-                src="/clientAvatar/2c.svg" alt="Envato" title="Envato" />
+                src={centralImages.testimonial_avatar_2} alt="Envato" title="Envato" />
               <img className="h-full w-full object-cover object-center"
-                // style="max-width: 48px; max-height: 48px;"
                 style={{ maxWidth: '48px', maxHeight: '48px' }}
-                src="/clientAvatar/4c.svg" alt="Envato" title="Envato" />
+                src={centralImages.testimonial_avatar_3} alt="Envato" title="Envato" />
               <img className="h-full w-full object-cover object-center"
-                // style="max-width: 48px; max-height: 48px;"
                 style={{ maxWidth: '48px', maxHeight: '48px' }}
-                src="/clientAvatar/5c.svg" alt="Envato" title="Envato" />
+                src={centralImages.testimonial_avatar_4} alt="Envato" title="Envato" />
               <img className="h-full w-full object-cover object-center"
-                // style="max-width: 48px; max-height: 48px;"
                 style={{ maxWidth: '48px', maxHeight: '48px' }}
-                src="/clientAvatar/6c.svg" alt="Envato" title="Envato" />
+                src={centralImages.testimonial_avatar_5} alt="Envato" title="Envato" />
             </div>
           </div>
         </div>
