@@ -19,6 +19,14 @@ import testimonialBG from '/src/assets/image/testimonials/world-map.png';
 import newsOne from '/src/assets/image/news/newsOne.png';
 import newsTwo from '/src/assets/image/news/newsTwo.png';
 import newsThree from '/src/assets/image/news/newsThree.png';
+import testimonial_client_1 from '/src/assets/image/testimonials/client-1.jpg';
+import testimonial_client_2 from '/src/assets/image/testimonials/client-2.jpg';
+import testimonial_client_3 from '/src/assets/image/testimonials/client-3.jpg';
+import testimonial_avatar_1 from '/src/assets/image/testimonials/1c.svg';
+import testimonial_avatar_2 from '/src/assets/image/testimonials/2c.svg';
+import testimonial_avatar_3 from '/src/assets/image/testimonials/3c.svg';
+import testimonial_avatar_4 from '/src/assets/image/testimonials/4c.svg';
+import testimonial_avatar_5 from '/src/assets/image/testimonials/5c.svg';
 
 export const centralImages = {
     upperNavBG,
@@ -40,5 +48,13 @@ export const centralImages = {
     testimonialBG,
     newsOne,
     newsTwo,
-    newsThree
+    newsThree,
+    testimonial_client_1,
+    testimonial_client_2,
+    testimonial_client_3,
+    testimonial_avatar_1,
+    testimonial_avatar_2,
+    testimonial_avatar_3,
+    testimonial_avatar_4,
+    testimonial_avatar_5,
 };
