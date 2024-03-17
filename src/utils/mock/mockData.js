@@ -333,6 +333,126 @@ const latestNewsData = [
         link: "/"
     }
 ];
+const pricingTabData = [
+    { id: "pricing-monthly", label: "Monthly" },
+    { id: "pricing-annual", label: "Annual", save: "Save 30%" },
+    { id: "pricing-lifetime", label: "Lifetime" },
+    { id: "pricing-prepaid", label: "Pre-Paid" }
+];
+const pricingCardData = [
+    {
+        id: "pricing-monthly",
+        data: [
+            {
+                id: 1,
+                title: "Free",
+                price: "0",
+                features: [
+                    "ChatGPT 3.5",
+                    "Basic Support",
+                    "10,000 Word Tokens",
+                    "5,000 Image Tokens"
+                ],
+                link: "/"
+            },
+            {
+                id: 2,
+                title: "Teams",
+                price: "19",
+                features: [
+                    "ChatGPT 4",
+                    "5 Seats Available",
+                    "VIP Support",
+                    "Access to premium templates",
+                    "30,000 Word Tokens",
+                    "10,000 Image Tokens"
+                ],
+                link: "/"
+            },
+            {
+                id: 3,
+                title: "Premium",
+                price: "29",
+                features: [
+                    "2 Days of free trial.",
+                    "All features in previous plans",
+                    "VIP Support",
+                    "Unlimited Word Tokens",
+                    "Unlimited Image Tokens"
+                ],
+                link: "/"
+            }
+        ]
+    },
+    {
+        id: "pricing-annual",
+        data: [
+            {
+                id: 4,
+                title: "Basic",
+                price: "399",
+                features: [
+                    "ChatGPT 3.5",
+                    "Basic Support",
+                    "100,000 Word Tokens",
+                    "50,000 Image Tokens"
+                ],
+                link: "/"
+            }
+        ]
+    },
+    {
+        id: "pricing-prepaid",
+        data: [
+            {
+                id: 7,
+                title: "Standard",
+                price: "199",
+                features: [
+                    "ChatGPT 4",
+                    "VIP Support",
+                    "Access to premium templates",
+                    "300,000 Word Tokens",
+                    "100,000 Image Tokens"
+                ],
+                link: "/"
+            },
+            {
+                id: 8,
+                title: "Premium",
+                price: "299",
+                features: [
+                    "All features in previous plans",
+                    "VIP Support",
+                    "Unlimited Word Tokens",
+                    "200 Image Tokens"
+                ],
+                link: "/"
+            }
+        ]
+    },
+    {
+        id: "pricing-lifetime",
+        data: [
+            {
+                id: 9,
+                title: "Lifetime Premium",
+                price: "960",
+                features: [
+                    "Access All Templates",
+                    "Generate Images",
+                    "Generate Text",
+                    "AI Chat",
+                    "Access AI Chat Templates",
+                    "VIP Support",
+                    "Unlimited Word Tokens",
+                    "Unlimited Image Tokens"
+                ],
+                link: "/"
+            }
+        ]
+    }
+];
 
 export {
     NavItem,
@@ -343,6 +463,8 @@ export {
     customTemplateItemListData,
     customTemplateCardData,
     faqData,
-    latestNewsData
+    latestNewsData,
+    pricingTabData,
+    pricingCardData
 }
 

@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials/Testimonials";
 import CustomTemplates from "./CustomTemplates/CustomTemplates";
 import FAQ from "./FAQ/FAQ";
 import LatestNews from "./LatestNews/LatestNews";
+import Pricing from "./Pricing/Pricing";
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <MagicTools />
             <HowItWorks />
             <Testimonials />
+            <Pricing />
             <FAQ />
             <LatestNews />
         </React.Fragment>
