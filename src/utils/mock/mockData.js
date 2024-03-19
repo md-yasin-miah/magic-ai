@@ -11,7 +11,25 @@ import {
     SupportPlatformSVG,
     TestimonialSVG,
     YoutubeSVG,
-    InstagramSVG
+    InstagramSVG,
+    TwitterSVG,
+    BookmarkSVG,
+    FacebookSVG,
+    GoogleAdsSVG,
+    ParagraphSVG,
+    ProsConsSVG,
+    MetaDescSVG,
+    FAQSVG,
+    EmailSVG,
+    SendSVG,
+    GrammarSVG,
+    SummarizeSVG,
+    ImgSVG,
+    SpeechSVG,
+    CodeSVG,
+    ArticleWizardSVG,
+    AIVisionSVG,
+    RSSSVG
 } from "../svg/SVG"
 
 const NavItem = [
@@ -283,7 +301,181 @@ const customTemplateCardData = [
         svgIcon: InstagramSVG,
         title: "Instagram Hashtags",
         description: "Boost your Instagram reach with relevant hashtags. Generate optimal, trending hashtags and increase your visibility."
-    }
+    },
+    {
+        id: "templates-social-media",
+        svgIcon: TwitterSVG,
+        title: "Social Media Post Tweet",
+        description: "Make an impact with every tweet. Generate attention-grabbing social media posts and increase engagement."
+    },
+    {
+        id: "templates-social-media",
+        svgIcon: BookmarkSVG,
+        title: "Social Media Post Business",
+        description: "Generate a text for your business social media networks. Maximize your social media presence with impactful business posts."
+    },
+    {
+        id: "templates-social-media",
+        svgIcon: FacebookSVG,
+        title: "Facebook Headlines",
+        description: "Get noticed with attention-grabbing Facebook headlines. Generate unique, clickable headlines that increase engagement and drive traffic."
+    },
+    {
+        id: "templates-advertisement",
+        svgIcon: GoogleAdsSVG,
+        title: "Google Ads Headlines",
+        description: "Create high-converting Google ads with captivating headlines. Generate unique, clickable ads that drive traffic and boost sales."
+    },
+    {
+        id: "templates-advertisement",
+        svgIcon: GoogleAdsSVG,
+        title: "Google Ads Description",
+        description: "Step up your Google ad game, Craft high-converting ad copy that grabs attention and drives sales."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: ParagraphSVG,
+        title: "Paragraph Generator",
+        description: "Generate a paragraph with keywords and description. Never struggle with writer's block again. Generate flawless paragraphs that captivate readers."
+    },
+    {
+        id: "templates-development",
+        svgIcon: ProsConsSVG,
+        title: "Pros & Cons",
+        description: "Make informed decisions with ease. Generate unbiased pros and cons lists that help you weigh options and make better choices."
+    },
+    {
+        id: "templates-development",
+        svgIcon: MetaDescSVG,
+        title: "Meta Description",
+        description: "Get more clicks with compelling meta descriptions. Generate unique, SEO-friendly meta descriptions that attract customers and boost traffic."
+    },
+    {
+        id: "templates-development",
+        svgIcon: FAQSVG,
+        title: "FAQ Generator (All Datas)",
+        description: "Quickly create helpful FAQs. Our AI-powered generator provides custom responses to common questions in seconds."
+    },
+    {
+        id: "templates-email",
+        svgIcon: EmailSVG,
+        title: "Email Generator",
+        description: "Generate an email with your subject and description. Streamline your inbox and save time."
+    },
+    {
+        id: "templates-email",
+        svgIcon: EmailSVG,
+        title: "Email Answer Generator",
+        description: "Effortlessly tackle your overflowing inbox with custom, accurate responses to common queries, freeing you up to focus on what matters most."
+    },
+    {
+        id: "templates-email",
+        svgIcon: SendSVG,
+        title: "Newsletter Generator",
+        description: "Generate engaging newsletters easily with personalized content that resonates with your audience, driving growth and engagement."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: GrammarSVG,
+        title: "Grammar Correction",
+        description: "Eliminate grammar errors and enhance your writing with ease. Our tool offers seamless grammar correction for flawless content."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: SummarizeSVG,
+        title: "TL;DR Summarization",
+        description: "Automatically summarize long texts into bite-sized summaries with this TL;DR generator."
+    },
+    {
+        id: "templates-development",
+        svgIcon: ImgSVG,
+        title: "AI Image Generator",
+        description: "Unleash your creativity with our AI image generator that produces stunning visuals in seconds."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: SpeechSVG,
+        title: "AI Speech to Text",
+        description: "The AI app that turns audio speech into text with ease. Get ready to generate custom texts from audio files quickly and accurately."
+    },
+    {
+        id: "templates-development",
+        svgIcon: CodeSVG,
+        title: "AI Code Generator",
+        description: "Create custom code in seconds! Leverage our state-of-the-art AI technology to quickly and easily generate code in any language."
+    },
+    {
+        id: "templates-voiceover",
+        svgIcon: SpeechSVG,
+        title: "AI Voiceover",
+        description: "The AI app that turns audio speech into text with ease. Get ready to generate custom texts from audio files quickly and accurately."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: ArticleWizardSVG,
+        title: "AI Article Wizard Generator",
+        description: "Create custom article instantly with our article wizard generator. Boost engagement and save time."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: AIVisionSVG,
+        title: "AI Vision",
+        description: "Elevate your visual analytics with our AI Vision platform. Harness the power of machine learning for real-time image recognition and data insights. Enhance efficiency and decision-making."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: AIVisionSVG,
+        title: "File Analyzer",
+        description: "Simply upload a file (PDF, CSV, .doc or .docx) and extract key insights or summarize the entire document."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: AIVisionSVG,
+        title: "Chat Image",
+        description: "Generate Image by user input"
+    },
+    {
+        id: "templates-youtube",
+        svgIcon: YoutubeSVG,
+        title: "AI YouTube",
+        description: "Simply turn your Youtube videos into Blog post."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: ArticleWizardSVG,
+        title: "AI ReWriter",
+        description: "Rewrite more professional and detailed content instantly with our ai rewriter. Boost engagement and save time."
+    },
+    {
+        id: "templates-rss",
+        svgIcon: RSSSVG,
+        title: "AI RSS",
+        description: "Generate unique content with RSS Feed."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: ArticleWizardSVG,
+        title: "AI Plagiarism Checker",
+        description: "Analyze text, comparing it against a vast database online content to identify potential plagiarism."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: ArticleWizardSVG,
+        title: "AI Content Detector",
+        description: "Analyze text, comparing it against a vast database online content to AI writing content."
+    },
+    {
+        id: "templates-video",
+        svgIcon: AIVisionSVG,
+        title: "AI Video",
+        description: "Bring your static images to life and create visually compelling videos effortlessly."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: AIVisionSVG,
+        title: "AI Web Chat",
+        description: "Analyze web page content with url"
+    },
 ]
 const faqData = [
     {
@@ -350,9 +542,10 @@ const pricingCardData = [
                 features: [
                     "ChatGPT 3.5",
                     "Basic Support",
-                    "10,000 Word Tokens",
-                    "5,000 Image Tokens"
+                    "<strong>10,000</strong> Word Tokens",
+                    "<strong>5,000</strong> Image Tokens"
                 ],
+                border: false,
                 link: "/"
             },
             {
@@ -364,9 +557,10 @@ const pricingCardData = [
                     "5 Seats Available",
                     "VIP Support",
                     "Access to premium templates",
-                    "30,000 Word Tokens",
-                    "10,000 Image Tokens"
+                    "<strong>30,000</strong> Word Tokens",
+                    "<strong>10,000</strong> Image Tokens"
                 ],
+                border: false,
                 link: "/"
             },
             {
@@ -377,9 +571,10 @@ const pricingCardData = [
                     "2 Days of free trial.",
                     "All features in previous plans",
                     "VIP Support",
-                    "Unlimited Word Tokens",
-                    "Unlimited Image Tokens"
+                    "<strong>Unlimited</strong> Word Tokens",
+                    "<strong>Unlimited</strong> Image Tokens"
                 ],
+                border: true,
                 link: "/"
             }
         ]
@@ -394,9 +589,10 @@ const pricingCardData = [
                 features: [
                     "ChatGPT 3.5",
                     "Basic Support",
-                    "100,000 Word Tokens",
-                    "50,000 Image Tokens"
+                    "<strong>100,000</strong> Word Tokens",
+                    "<strong>50,000</strong> Image Tokens"
                 ],
+                border: true,
                 link: "/"
             }
         ]
@@ -412,9 +608,10 @@ const pricingCardData = [
                     "ChatGPT 4",
                     "VIP Support",
                     "Access to premium templates",
-                    "300,000 Word Tokens",
-                    "100,000 Image Tokens"
+                    "<strong>300,000</strong> Word Tokens",
+                    "<strong>100,000</strong> Image Tokens"
                 ],
+                border: true,
                 link: "/"
             },
             {
@@ -424,9 +621,10 @@ const pricingCardData = [
                 features: [
                     "All features in previous plans",
                     "VIP Support",
-                    "Unlimited Word Tokens",
-                    "200 Image Tokens"
+                    "<strong>Unlimited</strong> Word Tokens",
+                    "<strong>200</strong> Image Tokens"
                 ],
+                border: false,
                 link: "/"
             }
         ]
@@ -445,9 +643,10 @@ const pricingCardData = [
                     "AI Chat",
                     "Access AI Chat Templates",
                     "VIP Support",
-                    "Unlimited Word Tokens",
-                    "Unlimited Image Tokens"
+                    "<strong>Unlimited</strong> Word Tokens",
+                    "<strong>Unlimited</strong> Image Tokens"
                 ],
+                border: true,
                 link: "/"
             }
         ]

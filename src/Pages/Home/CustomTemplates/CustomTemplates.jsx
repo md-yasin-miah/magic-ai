@@ -34,7 +34,7 @@ const CustomTemplates = () => {
                         </div>
                     </div>
                     <div className="relative">
-                        <div className="templates-cards grid max-h-[28rem] grid-cols-3 gap-4 overflow-hidden max-lg:grid-cols-2 max-md:grid-cols-1" style={{ overflow: showMore && "visible" }}>
+                        <div className={`templates-cards grid ${showMore ? 'max-h-fit' : 'max-h-[28rem]'} grid-cols-3 gap-4 overflow-hidden max-lg:grid-cols-2 max-md:grid-cols-1`} style={{ overflow: showMore && "visible" }}>
                             {customTemplateCardData.map((card, index) => (
                                 <div className={`group p-7 bg-[#F5F5F7] rounded-2xl templates-all ${card?.id}`} key={index + 1} style={{ display: (activeButton === "templates-all" || activeButton === card.id) ? "block" : "none" }}>
                                     <figure className="mix-blend-multiply group-hover:scale-125 relative z-0 inline-block transition-all duration-300">
