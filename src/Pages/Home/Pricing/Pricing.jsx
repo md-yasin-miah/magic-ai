@@ -32,7 +32,7 @@ const Pricing = () => {
                                     <div key={index + 1} id={card?.id} style={{ display: activeTab === card.id ? 'block' : 'none' }}>
                                         <div className="grid grid-cols-3 gap-2 max-md:grid-cols-1">
                                             {card?.data?.map((plan) => (
-                                                <div key={plan?.id} className="px-12 pt-7 pb-11 rounded-3xl text-center max-xl:px-6 max-lg:px-4">
+                                                <div key={plan?.id} className={`px-12 pt-7 pb-11 rounded-3xl text-center max-xl:px-6 max-lg:px-4 ${plan?.border && 'border'}`}>
                                                     <h6 className="p-[0.35rem] mb-6 border rounded-md text-[11px] text-opacity-80">{plan.title}</h6>
                                                     <p className="text-[45px] font-medium text-headingForeground leading-none -tracking-wide mb-1">
                                                         <sup className="text-[0.53em]">$</sup>{plan.price}
@@ -47,7 +47,7 @@ const Pricing = () => {
                                                                         <path d="M3.952 7.537L11.489 0L12.452 1L3.952 9.5L1.78814e-07 5.545L1 4.545L3.952 7.537Z"></path>
                                                                     </svg>
                                                                 </span>
-                                                                {feature}
+                                                                <p dangerouslySetInnerHTML={{ __html: feature }}></p>
                                                             </li>
                                                         ))}
                                                     </ul>

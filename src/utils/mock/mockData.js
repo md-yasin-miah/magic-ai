@@ -542,9 +542,10 @@ const pricingCardData = [
                 features: [
                     "ChatGPT 3.5",
                     "Basic Support",
-                    "10,000 Word Tokens",
-                    "5,000 Image Tokens"
+                    "<strong>10,000</strong> Word Tokens",
+                    "<strong>5,000</strong> Image Tokens"
                 ],
+                border: false,
                 link: "/"
             },
             {
@@ -556,9 +557,10 @@ const pricingCardData = [
                     "5 Seats Available",
                     "VIP Support",
                     "Access to premium templates",
-                    "30,000 Word Tokens",
-                    "10,000 Image Tokens"
+                    "<strong>30,000</strong> Word Tokens",
+                    "<strong>10,000</strong> Image Tokens"
                 ],
+                border: false,
                 link: "/"
             },
             {
@@ -569,9 +571,10 @@ const pricingCardData = [
                     "2 Days of free trial.",
                     "All features in previous plans",
                     "VIP Support",
-                    "Unlimited Word Tokens",
-                    "Unlimited Image Tokens"
+                    "<strong>Unlimited</strong> Word Tokens",
+                    "<strong>Unlimited</strong> Image Tokens"
                 ],
+                border: true,
                 link: "/"
             }
         ]
@@ -586,9 +589,10 @@ const pricingCardData = [
                 features: [
                     "ChatGPT 3.5",
                     "Basic Support",
-                    "100,000 Word Tokens",
-                    "50,000 Image Tokens"
+                    "<strong>100,000</strong> Word Tokens",
+                    "<strong>50,000</strong> Image Tokens"
                 ],
+                border: true,
                 link: "/"
             }
         ]
@@ -604,9 +608,10 @@ const pricingCardData = [
                     "ChatGPT 4",
                     "VIP Support",
                     "Access to premium templates",
-                    "300,000 Word Tokens",
-                    "100,000 Image Tokens"
+                    "<strong>300,000</strong> Word Tokens",
+                    "<strong>100,000</strong> Image Tokens"
                 ],
+                border: true,
                 link: "/"
             },
             {
@@ -616,9 +621,10 @@ const pricingCardData = [
                 features: [
                     "All features in previous plans",
                     "VIP Support",
-                    "Unlimited Word Tokens",
-                    "200 Image Tokens"
+                    "<strong>Unlimited</strong> Word Tokens",
+                    "<strong>200</strong> Image Tokens"
                 ],
+                border: false,
                 link: "/"
             }
         ]
@@ -637,9 +643,10 @@ const pricingCardData = [
                     "AI Chat",
                     "Access AI Chat Templates",
                     "VIP Support",
-                    "Unlimited Word Tokens",
-                    "Unlimited Image Tokens"
+                    "<strong>Unlimited</strong> Word Tokens",
+                    "<strong>Unlimited</strong> Image Tokens"
                 ],
+                border: true,
                 link: "/"
             }
         ]
