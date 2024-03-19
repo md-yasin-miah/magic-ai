@@ -11,7 +11,16 @@ import {
     SupportPlatformSVG,
     TestimonialSVG,
     YoutubeSVG,
-    InstagramSVG
+    InstagramSVG,
+    TwitterSVG,
+    BookmarkSVG,
+    FacebookSVG,
+    GoogleAdsSVG,
+    ParagraphSVG,
+    ProsConsSVG,
+    MetaDescSVG,
+    FAQSVG,
+    EmailSVG
 } from "../svg/SVG"
 
 const NavItem = [
@@ -283,6 +292,72 @@ const customTemplateCardData = [
         svgIcon: InstagramSVG,
         title: "Instagram Hashtags",
         description: "Boost your Instagram reach with relevant hashtags. Generate optimal, trending hashtags and increase your visibility."
+    },
+    {
+        id: "templates-social-media",
+        svgIcon: TwitterSVG,
+        title: "Social Media Post Tweet",
+        description: "Make an impact with every tweet. Generate attention-grabbing social media posts and increase engagement."
+    },
+    {
+        id: "templates-social-media",
+        svgIcon: BookmarkSVG,
+        title: "Social Media Post Business",
+        description: "Generate a text for your business social media networks. Maximize your social media presence with impactful business posts."
+    },
+    {
+        id: "templates-social-media",
+        svgIcon: FacebookSVG,
+        title: "Facebook Headlines",
+        description: "Get noticed with attention-grabbing Facebook headlines. Generate unique, clickable headlines that increase engagement and drive traffic."
+    },
+    {
+        id: "templates-advertisement",
+        svgIcon: GoogleAdsSVG,
+        title: "Google Ads Headlines",
+        description: "Create high-converting Google ads with captivating headlines. Generate unique, clickable ads that drive traffic and boost sales."
+    },
+    {
+        id: "templates-advertisement",
+        svgIcon: GoogleAdsSVG,
+        title: "Google Ads Description",
+        description: "Step up your Google ad game, Craft high-converting ad copy that grabs attention and drives sales."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: ParagraphSVG,
+        title: "Paragraph Generator",
+        description: "Generate a paragraph with keywords and description. Never struggle with writer's block again. Generate flawless paragraphs that captivate readers."
+    },
+    {
+        id: "templates-development",
+        svgIcon: ProsConsSVG,
+        title: "Pros & Cons",
+        description: "Make informed decisions with ease. Generate unbiased pros and cons lists that help you weigh options and make better choices."
+    },
+    {
+        id: "templates-development",
+        svgIcon: MetaDescSVG,
+        title: "Meta Description",
+        description: "Get more clicks with compelling meta descriptions. Generate unique, SEO-friendly meta descriptions that attract customers and boost traffic."
+    },
+    {
+        id: "templates-development",
+        svgIcon: FAQSVG,
+        title: "FAQ Generator (All Datas)",
+        description: "Quickly create helpful FAQs. Our AI-powered generator provides custom responses to common questions in seconds."
+    },
+    {
+        id: "templates-email",
+        svgIcon: EmailSVG,
+        title: "Email Generator",
+        description: "Generate an email with your subject and description. Streamline your inbox and save time."
+    },
+    {
+        id: "templates-email",
+        svgIcon: EmailSVG,
+        title: "Email Answer Generator",
+        description: "Effortlessly tackle your overflowing inbox with custom, accurate responses to common queries, freeing you up to focus on what matters most."
     }
 ]
 const faqData = [
