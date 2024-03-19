@@ -20,7 +20,16 @@ import {
     ProsConsSVG,
     MetaDescSVG,
     FAQSVG,
-    EmailSVG
+    EmailSVG,
+    SendSVG,
+    GrammarSVG,
+    SummarizeSVG,
+    ImgSVG,
+    SpeechSVG,
+    CodeSVG,
+    ArticleWizardSVG,
+    AIVisionSVG,
+    RSSSVG
 } from "../svg/SVG"
 
 const NavItem = [
@@ -358,7 +367,115 @@ const customTemplateCardData = [
         svgIcon: EmailSVG,
         title: "Email Answer Generator",
         description: "Effortlessly tackle your overflowing inbox with custom, accurate responses to common queries, freeing you up to focus on what matters most."
-    }
+    },
+    {
+        id: "templates-email",
+        svgIcon: SendSVG,
+        title: "Newsletter Generator",
+        description: "Generate engaging newsletters easily with personalized content that resonates with your audience, driving growth and engagement."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: GrammarSVG,
+        title: "Grammar Correction",
+        description: "Eliminate grammar errors and enhance your writing with ease. Our tool offers seamless grammar correction for flawless content."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: SummarizeSVG,
+        title: "TL;DR Summarization",
+        description: "Automatically summarize long texts into bite-sized summaries with this TL;DR generator."
+    },
+    {
+        id: "templates-development",
+        svgIcon: ImgSVG,
+        title: "AI Image Generator",
+        description: "Unleash your creativity with our AI image generator that produces stunning visuals in seconds."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: SpeechSVG,
+        title: "AI Speech to Text",
+        description: "The AI app that turns audio speech into text with ease. Get ready to generate custom texts from audio files quickly and accurately."
+    },
+    {
+        id: "templates-development",
+        svgIcon: CodeSVG,
+        title: "AI Code Generator",
+        description: "Create custom code in seconds! Leverage our state-of-the-art AI technology to quickly and easily generate code in any language."
+    },
+    {
+        id: "templates-voiceover",
+        svgIcon: SpeechSVG,
+        title: "AI Voiceover",
+        description: "The AI app that turns audio speech into text with ease. Get ready to generate custom texts from audio files quickly and accurately."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: ArticleWizardSVG,
+        title: "AI Article Wizard Generator",
+        description: "Create custom article instantly with our article wizard generator. Boost engagement and save time."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: AIVisionSVG,
+        title: "AI Vision",
+        description: "Elevate your visual analytics with our AI Vision platform. Harness the power of machine learning for real-time image recognition and data insights. Enhance efficiency and decision-making."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: AIVisionSVG,
+        title: "File Analyzer",
+        description: "Simply upload a file (PDF, CSV, .doc or .docx) and extract key insights or summarize the entire document."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: AIVisionSVG,
+        title: "Chat Image",
+        description: "Generate Image by user input"
+    },
+    {
+        id: "templates-youtube",
+        svgIcon: YoutubeSVG,
+        title: "AI YouTube",
+        description: "Simply turn your Youtube videos into Blog post."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: ArticleWizardSVG,
+        title: "AI ReWriter",
+        description: "Rewrite more professional and detailed content instantly with our ai rewriter. Boost engagement and save time."
+    },
+    {
+        id: "templates-rss",
+        svgIcon: RSSSVG,
+        title: "AI RSS",
+        description: "Generate unique content with RSS Feed."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: ArticleWizardSVG,
+        title: "AI Plagiarism Checker",
+        description: "Analyze text, comparing it against a vast database online content to identify potential plagiarism."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: ArticleWizardSVG,
+        title: "AI Content Detector",
+        description: "Analyze text, comparing it against a vast database online content to AI writing content."
+    },
+    {
+        id: "templates-video",
+        svgIcon: AIVisionSVG,
+        title: "AI Video",
+        description: "Bring your static images to life and create visually compelling videos effortlessly."
+    },
+    {
+        id: "templates-blog",
+        svgIcon: AIVisionSVG,
+        title: "AI Web Chat",
+        description: "Analyze web page content with url"
+    },
 ]
 const faqData = [
     {

@@ -150,6 +150,71 @@ const EmailSVG = () => {
         </svg>
     )
 }
+const SendSVG = () => {
+    return (
+        <svg width="24" height="20" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.625 13.5V8.26172L11.875 6.75L0.625 5.23828V0L16.375 6.75L0.625 13.5Z" fill="#7c7c7e"></path>
+        </svg>
+    )
+}
+const GrammarSVG = () => {
+    return (
+        <svg width="24" height="20" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.75586 8.01172V9.48828H0.255859V8.01172H4.75586ZM6.37305 5.58594L5.31836 6.64062L3.73633 5.02344L4.79102 3.96875L6.37305 5.58594ZM9.25586 0.488281V4.98828H7.74414V0.488281H9.25586ZM13.2637 5.02344L11.6816 6.64062L10.627 5.58594L12.209 3.96875L13.2637 5.02344ZM12.2441 8.01172H16.7441V9.48828H12.2441V8.01172ZM6.90039 7.16797C7.3457 6.72266 7.87305 6.5 8.48242 6.5C9.11523 6.5 9.6543 6.72266 10.0996 7.16797C10.5449 7.58984 10.7676 8.11719 10.7676 8.75C10.7676 9.38281 10.5449 9.92188 10.0996 10.3672C9.6543 10.7891 9.11523 11 8.48242 11C7.87305 11 7.3457 10.7891 6.90039 10.3672C6.47852 9.92188 6.26758 9.38281 6.26758 8.75C6.26758 8.11719 6.47852 7.58984 6.90039 7.16797ZM10.627 11.9141L11.6816 10.8594L13.2637 12.4766L12.209 13.5312L10.627 11.9141ZM3.73633 12.4766L5.31836 10.8594L6.37305 11.9141L4.79102 13.5312L3.73633 12.4766ZM7.74414 17.0117V12.5117H9.25586V17.0117H7.74414Z" fill="#7c7c7e"></path>
+        </svg>
+    )
+}
+const SummarizeSVG = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="20">
+            <path d="M160 666v-60h389v60H160Zm0-120v-60h640v60H160Z"></path>
+        </svg>
+    )
+}
+const ImgSVG = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="20">
+            <path d="M180 936q-24 0-42-18t-18-42V276q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm56-157h489L578 583 446 754l-93-127-117 152Z"></path>
+        </svg>
+    )
+}
+const SpeechSVG = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="20">
+            <path d="M140 976q-24.75 0-42.375-17.625T80 916V236q0-24.75 17.625-42.375T140 176h380l-60 60H140v680h480V776h60v140q0 24.75-17.625 42.375T620 976H140Zm100-170v-60h280v60H240Zm0-120v-60h200v60H240Zm380 10L460 536H320V336h140l160-160v520Zm60-92V258q56 21 88 74t32 104q0 51-35 101t-85 67Zm0 142v-62q70-25 125-90t55-158q0-93-55-158t-125-90v-62q102 27 171 112.5T920 436q0 112-69 197.5T680 746Z"></path>
+        </svg>
+    )
+}
+const CodeSVG = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="20">
+            <path d="M196.666 965.333q-43.824 0-74.912-31.087-31.087-31.088-31.087-74.912V701.667h105.999v157.667h157.667v105.999H196.666Zm409.001 0V859.334h157.667V701.667H870v157.667q0 43.824-31.284 74.912-31.283 31.087-75.382 31.087H605.667ZM344 739.333 180.667 576 344 412.667 418.333 489l-86 87 86 87L344 739.333Zm272 0L541.667 663l86-87-86-87L616 412.667 779.333 576 616 739.333Zm-525.333-289V292.666q0-44.099 31.087-75.382Q152.842 186 196.666 186h157.667v106.666H196.666v157.667H90.667Zm672.667 0V292.666H605.667V186h157.667q44.099 0 75.382 31.284Q870 248.567 870 292.666v157.667H763.334Z"></path>
+        </svg>
+    )
+}
+const ArticleWizardSVG = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="20">
+            <path d="M430 896V356H200V256h560v100H530v540H430Z"></path>
+        </svg>
+    )
+}
+const AIVisionSVG = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" strokeWidth="2" stroke="black" fill="none" viewBox="0 0 24 24">
+            <path stroke="none" d="M0 0h24v24H0z" fill="#7c7c7e"></path><path d="M6 4l6 16l6 -16"></path>
+        </svg>
+    )
+}
+const RSSSVG = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+            <path d="M4 4a16 16 0 0 1 16 16"></path><path d="M4 11a9 9 0 0 1 9 9"></path>
+        </svg>
+    )
+}
 
 export {
     AIGeneratorSVG,
@@ -172,5 +237,14 @@ export {
     ProsConsSVG,
     MetaDescSVG,
     FAQSVG,
-    EmailSVG
+    EmailSVG,
+    SendSVG,
+    GrammarSVG,
+    SummarizeSVG,
+    ImgSVG,
+    SpeechSVG,
+    CodeSVG,
+    ArticleWizardSVG,
+    AIVisionSVG,
+    RSSSVG
 };
