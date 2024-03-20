@@ -17,7 +17,12 @@ const Header = () => {
     };
   }, []);
   return (
-    <header className={`site-header group/header absolute inset-x-0 z-50 text-white transition-[background,shadow] [&.lqd-is-sticky]:bg-white [&.lqd-is-sticky]:text-black [&.lqd-is-sticky]:shadow-[0_4px_20px_rgba(0,0,0,0.03)] top-12 lqd-is-sticky ${isSticky && 'lqd-is-sticky'}`}>
+    <header className={`site-header group/header absolute inset-x-0 z-50 text-white transition-[background,shadow] [&.lqd-is-sticky]:bg-white [&.lqd-is-sticky]:text-black [&.lqd-is-sticky]:shadow-[0_4px_20px_rgba(0,0,0,0.03)] top-12 ${isSticky && 'lqd-is-sticky'}`}
+      style={{
+        position: isSticky ? 'fixed' : '',
+        top: isSticky ? '0px' : '',
+      }}
+    >
       <nav className="relative flex items-center justify-between border-b border-white border-opacity-10 px-7 py-4 text-[14px] opacity-0 transition-all duration-500 group-[.lqd-is-sticky]/header:border-black group-[.lqd-is-sticky]/header:border-opacity-5 group-[.page-loaded]/body:opacity-100 max-sm:px-2" id="frontend-local-navbar">
         <a className="site-logo relative basis-1/3 max-lg:basis-1/3" href="https://magicai.liquid-themes.com">
           <img className="peer absolute start-0 top-1/2 -translate-y-1/2 translate-x-3 opacity-0 transition-all group-[.lqd-is-sticky]/header:translate-x-0 group-[.lqd-is-sticky]/header:opacity-100" src="/themes/default/assets/img/logo/magicAI-logo.svg" alt="MagicAI logo" />
