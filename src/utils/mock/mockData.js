@@ -479,25 +479,45 @@ const customTemplateCardData = [
 ]
 const faqData = [
     {
-        question: "How does it generate responses?",
-        answer: "MagicAI uses the most popular AI models such as GPT, Dall-E, Ada to create text, image, code and more within seconds. The process is simple. All you have to do is provide a topic or idea, and our AI-based generator will take care of the rest."
+        question: "Is There Any Risk To My Account?",
+        answer: "Unlike Instagram “growth tools”, we don’t ask for your Instagram password and we don’t use any automation or mass following to get you followers and engagement. We only use organic promotion through influencers, publications, and our in-house platform, so there’s no risk to your account."
     },
     {
-        question: "Can I create templates or chat bots?",
-        answer: "You can use pre-made templates and examples for various content types and industries to help you get started quickly. You can even create your own chatbot or custom prompt template for further customization."
+        question: "How are you different from other services?",
+        answer: "Any service that asks for your Instagram password or uses any kind of automation or bots is violating Instagram Terms of Service and puts your account at risk of permaban. We never ask for your Instagram password, and only do manual, organic outreach and promotion to build real, long-lasting, high engaging followers."
     },
     {
-        question: "Should I buy regular or extended license?",
-        answer: "If you plan to charge end users for the final product or service. You should buy the extended license in compliance with Envato’s terms of service same as other projects https://codecanyon.net/licenses/standard"
+        question: "Do you follow / unfollow?",
+        answer: "Nope, and that violates Instagram Terms of Service. We don’t log into your account, we’re not a bot or an automation tool, we’re a social media agency and a team of strategists who promote your profile organically through our influencers and our platform."
     },
     {
-        question: "Can I translate the script into another language?",
-        answer: "Yes! MagicAI's multilingual capabilities apply to both content generation and dashboard language. You can easily translate it into other languages. A built-in translation tool is coming soon!"
+        question: "Will I lose my followers if I cancel?",
+        answer: "Nope! You won’t lose any followers after cancelling. We get you organic followers who like your content and follow you because they want to!"
     },
     {
-        question: "Is there a mobile app for MagicAI?",
-        answer: "MagicAI provides an almost native-app experience thanks to its mobile-first approach. The entire layout is responsive and works great on any device regardless of the size."
-    }
+        question: "How fast will I see results?",
+        answer: "Our team works everyday, so you’ll start growing within 2 days, and fully ramping up after around a week. If not, we’ll happily give you a refund!"
+    },
+    {
+        question: "Are the followers real?",
+        answer: "We don’t know what fake followers are here. We only use organic outreach to get you engaged Instagram followers who are interested in your profile and content."
+    },
+    {
+        question: "Who uses this?",
+        answer: "We’ve successfully built Instagram communities for brands, celebrities, influencers, local businesses, retail stores, tech companies, and so much more. As long as you’re on Instagram, we can and will help you grow."
+    },
+    {
+        question: "Will Path Social work for my niche or industry?",
+        answer: "Yep, we’ve built a proprietary AI audience targeting algorithm that helps us determine what types of audiences are best for your brand. We also have a network of tens of thousands of influencers across hundreds of niches. As long as there’s folks on Instagram interested in your content, we’ll track them down for you."
+    },
+    {
+        question: "What’s required on my end?",
+        answer: "We just need to know your handle, and what type kind of audience you’re going after. After that, just sit back and let our team handle the rest!"
+    },
+    {
+        question: "How can I get more followers on Instagram?",
+        answer: "There are a number of tried and tested ways to get more followers on Instagram. Building a strong presence on the platform to grow Instagram followers through quality content, regular posting, an effective hashtag strategy, and the proper use of Instagram’s tools should always be part of your overall growth strategy. Boosting posts, paid advertising, and influencer marketing are just as crucial to lasting Instagram growth. Teaming up with an expert in Instagram growth, like Path Social can take you even farther on your Instagram growth journey."
+    },
 ];
 const latestNewsData = [
     {
