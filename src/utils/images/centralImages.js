@@ -28,6 +28,7 @@ import testimonial_avatar_3 from '/src/assets/image/testimonials/3c.svg';
 import testimonial_avatar_4 from '/src/assets/image/testimonials/4c.svg';
 import testimonial_avatar_5 from '/src/assets/image/testimonials/5c.svg';
 import uberLogo from '@/assets/image/brands/uberLogo.png';
+import forbesLogo from '@/assets/image/asFeatured/forbes.webp';
 
 export const centralImages = {
     upperNavBG,
@@ -58,5 +59,6 @@ export const centralImages = {
     testimonial_avatar_3,
     testimonial_avatar_4,
     testimonial_avatar_5,
-    uberLogo
+    uberLogo,
+    forbesLogo
 };

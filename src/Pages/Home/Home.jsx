@@ -12,6 +12,7 @@ import Footer from "./Footer/Footer";
 import Pricing from "./Pricing/Pricing";
 import Header from "../../components/Shared/Header";
 import FeaturedBands from "./featuredBands/FeaturedBands";
+import AsFeatured from "./asFeatured/AsFeatured";
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             <Header />
             <MainNav />
             <FeaturedBands />
+            <AsFeatured />
             <FutureOfAI />
             <CustomTemplates />
             <MagicTools />
