@@ -31,6 +31,55 @@
   opacity: .4
 }
 
+@keyframes img-move {
+  0% {
+    top: 0px;
+  }
+
+  25% {
+    top: -180px
+  }
+
+  50% {
+    top: -350px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes img-move2 {
+  0% {
+    top: 0px;
+  }
+
+  25% {
+    top: -150px
+  }
+
+  50% {
+    top: -236px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.mainNavSS {
+  top: 0px;
+  transition-timing-function: ease-in-out;
+  position: relative;
+  animation: img-move 12s ease-in-out 3s infinite alternate forwards;
+}
+
+@media (max-width: 767px) {
+  .mainNavSS {
+    animation: img-move2 12s ease-in-out 3s infinite alternate forwards;
+  }
+}
+
 /* banner end */
 
 /* upper nav start */
