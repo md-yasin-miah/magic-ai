@@ -675,7 +675,28 @@ const testimonialData = [
         quote: "“The customer support team has been incredibly helpful whenever I’ve had any questions. I can’t imagine going back to my old content-creation methods!”"
     }
 ]
-
+const clientResultsData = [
+    {
+        id:1,
+        title: '24,000+',
+        desc: 'Successful Clients'
+    },
+    {
+        id:2,
+        title: '4,620',
+        desc: 'New Instagram Followers Per Month On Average'
+    },
+    {
+        id:3,
+        title: '8.2M+',
+        desc: 'Hours Saved'
+    },
+    {
+        id:4,
+        title: '4.86/5',
+        desc: 'Verified User Reviews'
+    }
+];
 export {
     NavItem,
     FutureOfAIData,
@@ -688,5 +709,6 @@ export {
     latestNewsData,
     pricingTabData,
     pricingCardData,
-    testimonialData
+    testimonialData,
+    clientResultsData
 }
