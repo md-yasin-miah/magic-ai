@@ -109,17 +109,108 @@ const careerData = [
     {
         id: 6,
         title: 'Developers',
-        className: 'text-[#EF793A] bg-[#EF793A] hover:shadow-[#ef793a1f]',
+        className: { text: 'text-[#EF793A]', bg: 'bg-[#EF793A]', shadow: 'hover:shadow-[#ef793a1f]' }
     }
 
 ]
-
+const toolsCardData = [
+    {
+        id: 1,
+        title: 'Advanced Dashboard',
+        description: 'Track a wide range of data points, including user traffic and sales.',
+        img: centralImages.tools_1
+    },
+    {
+        id: 2,
+        title: 'Payment Gateways',
+        description: 'Securely process credit card or other electronic payment methods.',
+        img: centralImages.tools_2
+    },
+    {
+        id: 3,
+        title: 'Multilingual',
+        description: 'Ability to understand and generate content in different languages.',
+        img: centralImages.tools_3
+    },
+    {
+        id: 4,
+        title: 'Affiliate System',
+        description: 'Ability to invite friends, and earn commission from their first purchase.',
+        img: centralImages.tools_4
+    },
+    {
+        id: 5,
+        title: 'Easy Export',
+        description: 'Export generated content as plain text, PDF, Word or HTML easily.',
+        img: centralImages.tools_5
+    },
+    {
+        id: 6,
+        title: 'Support Platform',
+        description: 'Access and mage support tickets from your dashboard.',
+        img: centralImages.tools_6
+    }
+]
 const futureAITabContentData = [
     {
         id: "ai-text-generator",
-        title: "Say goodbye to writer’s block",
-        description: "Intelligent Writing Assistant",
-        imageSrc: ""
+        buttonTxt: "AI Text Generator",
+        smTitle: "Say goodbye to writer’s block",
+        title: "Intelligent Writing Assistant",
+        description: "Writer is designed to help you <strong>generate high-quality texts instantly</strong>, without breaking a sweat. With our intuitive interface and powerful features, you can easily edit, export or publish your AI-generated result.",
+        imageSrc: centralImages?.textGeneratorImg,
+        alt: "Text Generator",
+        imageDesc: "Generate, edit, export.",
+        backgroundColor: "#F3E5F5",
+        poweredBy: "Powered by OpenAI"
+    },
+    {
+        id: "ai-image-generator",
+        buttonTxt: "AI Image Generator",
+        smTitle: "Unleash your creativity",
+        title: "Create eye-catching images and graphics.",
+        description: "Generate high quality images for a wide range of applications",
+        imageSrc: centralImages?.imgGeneratorImg,
+        alt: "Image Generator",
+        imageDesc: "Imagine, Generate, Publish.",
+        backgroundColor: "#DFE5EB",
+        poweredBy: "Powered by Dall-E"
+    },
+    {
+        id: "ai-code-generator",
+        buttonTxt: "AI Code Generator",
+        smTitle: "The future of development'",
+        title: "Generate high quality code in no time.",
+        description: "MagicAI is designed to make coding faster, easier, and more efficient than ever before. Whether you’re a seasoned developer or a coding newbie, our tool will help you streamline your coding process and get your projects up and running in no time.",
+        imageSrc: centralImages?.codeGeneratorImg,
+        alt: "Code Generator",
+        imageDesc: "and more efficient than ever before. Whether you’re a seasoned developer or a coding newbie",
+        backgroundColor: "#DDE6FF",
+        poweredBy: "Fix. Improve. Generate."
+    },
+    {
+        id: "ai-chat-bot",
+        buttonTxt: "AI Chat Bot",
+        smTitle: "Intuitive / Human like Chatbot ",
+        title: "Meet your next virtual assistant.",
+        description: "Get instant answers to your questions, no matter the topic. Whether you’re looking to book a reservation, get product recommendations, or just chat about the weather, MagicAI is always ready and willing to help.",
+        imageSrc: centralImages?.aiGeneratorImg,
+        alt: "AI Chat Generator",
+        imageDesc: "Chat, Solve, Repeat.",
+        backgroundColor: "#F9DDDF",
+        poweredBy: "Powered by OpenAI"
+    },
+    {
+        id: "ai-speech-to-text",
+        buttonTxt: "AI Speech To Text",
+        smTitle: "Say goodbye to writer’s block",
+        title: "Transcribe your speech into text.",
+        description: "Accurately transcribe your recordings in just minutes. With our user-friendly interface, you can upload your files and have them transcribed in a matter of clicks.",
+        imageSrc: centralImages?.aiSpeechImg,
+        alt: "AI Speech Generator",
+        imageDesc: "Upload, Analyze, Generate.",
+        backgroundColor: "#FFF8EB",
+        poweredBy: "Powered by OpenAI"
     }
 ];
 const customTemplateItemListData = [
@@ -604,7 +695,28 @@ const testimonialData = [
         quote: "“The customer support team has been incredibly helpful whenever I’ve had any questions. I can’t imagine going back to my old content-creation methods!”"
     }
 ]
-
+const clientResultsData = [
+    {
+        id: 1,
+        title: '24,000+',
+        desc: 'Successful Clients'
+    },
+    {
+        id: 2,
+        title: '4,620',
+        desc: 'New Instagram Followers Per Month On Average'
+    },
+    {
+        id: 3,
+        title: '8.2M+',
+        desc: 'Hours Saved'
+    },
+    {
+        id: 4,
+        title: '4.86/5',
+        desc: 'Verified User Reviews'
+    }
+];
 export {
     NavItem,
     FutureOfAIData,
@@ -617,5 +729,6 @@ export {
     latestNewsData,
     pricingTabData,
     pricingCardData,
-    testimonialData
+    testimonialData,
+    clientResultsData
 }
