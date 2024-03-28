@@ -13,6 +13,7 @@ import Pricing from "./Pricing/Pricing";
 import Header from "../../components/Shared/Header";
 import FeaturedBands from "./featuredBands/FeaturedBands";
 import AsFeatured from "./asFeatured/AsFeatured";
+import ClientResults from "./clientResults/ClientResults";
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             <MainNav />
             <FeaturedBands />
             <AsFeatured />
+            <ClientResults />
             <FutureOfAI />
             <CustomTemplates />
             <MagicTools />
