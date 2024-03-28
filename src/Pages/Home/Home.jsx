@@ -11,6 +11,7 @@ import LatestNews from "./LatestNews/LatestNews";
 import Footer from "./Footer/Footer";
 import Pricing from "./Pricing/Pricing";
 import Header from "../../components/Shared/Header";
+import FeaturedBands from "./featuredBands/FeaturedBands";
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <UpperNav />
             <Header />
             <MainNav />
+            <FeaturedBands />
             <FutureOfAI />
             <CustomTemplates />
             <MagicTools />
