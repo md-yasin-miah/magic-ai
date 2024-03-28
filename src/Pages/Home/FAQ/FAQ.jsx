@@ -12,14 +12,14 @@ const FAQ = () => {
     <ScrollAwareSection className="py-10">
       <div className="container">
         <div className="relative rounded-[50px] border p-11 pb-16 max-sm:px-5">
-          <header className="mx-auto text-center w-1/2 mb-9 max-xl:w-8/12 max-lg:w-10/12 max-md:w-full">
+          <header className="mx-auto text-center w-10/12 mb-9 max-xl:w-8/12 max-lg:w-10/12 max-md:w-full">
             <h6 className="mb-6 inline-block rounded-md bg-[#60027C] bg-opacity-15 px-3 py-1 text-[13px] font-medium text-[#60027C]">
               FAQ
               <span className="dot"></span>
               <span className="opacity-50">Help Center</span>
             </h6>
-            <h2 className="mb-[0.45em]">Have a question?</h2>
-            <p className="text-[18px] leading-[1.444em]">Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.</p>
+            <h2 className="mb-[0.45em]">Everything You Need to Know</h2>
+            <p className="text-[18px] leading-[1.444em]">Still have questions? Don’t hesitate to email or start a live chat with us!</p>
           </header>
           <div className="lqd-accordion mx-auto w-5/6 max-lg:w-full">
             {faqData.map((item, index) => (
